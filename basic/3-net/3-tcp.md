@@ -65,7 +65,7 @@
 
 ### 内核对 TCP 的处理
 
-Socket 是一个由 源IP、源Port、目标IP、目标Port、协议 组成的五元组，唯一标示一个 socket 连接。
+Socket 是一个由 （源IP、源Port、目标IP、目标Port、协议） 组成的五元组，唯一标示一个 socket 连接。
 
 TCP 建立连接的整体流程：
 

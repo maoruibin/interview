@@ -17,7 +17,7 @@ public static boolean interrupted() {}
 public void interrupt() {}
 ```
 
-我们说中断一个线程，其实就是设置了线程的 `interrupted status` 为 `true`，至于说被中断的线程怎么处理这个状态，那是那个线程自己的事。如以下代码：
+我们说 **中断一个线程，其实就是设置了线程的 `interrupted status` 为 `true`**，至于说被中断的线程怎么处理这个状态，那是那个线程自己的事。如以下代码：
 
 ```
 while (!Thread.interrupted()) {
@@ -57,7 +57,8 @@ while (!Thread.interrupted()) {
 一旦中断发生，我们接收到了这个信息，然后怎么去处理中断呢？本小节将简单分析这个问题。
 
 我们经常会这么写代码：
-```
+
+```java
 try {
     Thread.sleep(10000);
 } catch (InterruptedException e) {
@@ -70,7 +71,7 @@ try {
 
 AQS 的做法很值得我们借鉴，我们知道 `ReentrantLock` 有两种 `lock` 方法：
 
-```
+```java
 public void lock() {
     sync.lock();
 }
@@ -82,7 +83,7 @@ public void lockInterruptibly() throws InterruptedException {
 
 前面我们提到过，`lock()` 方法不响应中断。如果 `thread1` 调用了 `lock()` 方法，过了很久还没抢到锁，这个时候 `thread2` 对其进行了中断，`thread1` 是不响应这个请求的，它会继续抢锁，当然它不会把“被中断”这个信息扔掉。我们可以看以下代码：
 
-```
+```java
 public final void acquire(int arg) {
     if (!tryAcquire(arg) &&
         acquireQueued(addWaiter(Node.EXCLUSIVE), arg))
@@ -91,11 +92,36 @@ public final void acquire(int arg) {
         selfInterrupt();// Thread.currentThread().interrupt();
 }
 ```
+
 而对于 `lockInterruptibly()` 方法，因为其方法上面有` throws InterruptedException` ，这个信号告诉我们，如果我们要取消线程抢锁，直接中断这个线程即可，它会立即返回，抛出 `InterruptedException` 异常。
 
 在并发包中，有非常多的这种处理中断的例子，提供两个方法，分别为响应中断和不响应中断，对于不响应中断的方法，记录中断而不是丢失这个信息。如 `Condition` 中的两个方法就是这样的：
 
-```
+```java
 void await() throws InterruptedException;
 void awaitUninterruptibly();
 ```
+
+## 实例分析
+
+有以下代码：
+
+```java
+synchronized (this) {
+    while (client == null) {
+        try {
+            this.wait();
+        } catch (InterruptedException e) {
+            LOGGER.error("InterruptedException:{}", e);
+            Thread.currentThread().interrupt();
+        }
+    }
+}
+```
+
+上面的代码会造成什么问题？仔细分析可以发现，代码中如果抛出 `InterruptedException`，就会陷入死循环中，导致异常日志打爆。为什么会这样呢？首先我们来看下这两个方法：
+
+- `wait()`: if any thread interrupted the current thread before or while the current thread was waiting for a notification. The interrupted status of the current thread is cleared when this exception is thrown.
+- `Thread.currentThread().interrupt()`:If none of the previous conditions hold then this thread's interrupt status will be set.
+
+`wait()` 在当前线程有中断标志位时抛出中断异常；而 `interrupt()` 如果当前线程没有在`wait()`等阻塞操作，则标记中断。这样就陷入死循环，无限的打印 ERROR 日志。正确的处理 `InterruptedException` 是很重要的。
