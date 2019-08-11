@@ -1,0 +1,3580 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Redis · Java / Android 笔试、面试 知识整理</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="HadYang">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="10-questions.html" />
+    
+    
+    <link rel="prev" href="8-innodb.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"hadyang","repo":"interview","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../android/">
+            
+                <a href="../../android/">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../android/arch.html">
+            
+                <a href="../../android/arch.html">
+            
+                    
+                    Android系统架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../android/lifecicle.html">
+            
+                <a href="../../android/lifecicle.html">
+            
+                    
+                    Activity && Service生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../android/launchmod.html">
+            
+                <a href="../../android/launchmod.html">
+            
+                    
+                    Activity四种启动模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../android/listview.html">
+            
+                <a href="../../android/listview.html">
+            
+                    
+                    ListView原理及优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../android/handler.html">
+            
+                <a href="../../android/handler.html">
+            
+                    
+                    Android中Handler机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../android/broadcast.html">
+            
+                <a href="../../android/broadcast.html">
+            
+                    
+                    Android广播机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../android/draw.html">
+            
+                <a href="../../android/draw.html">
+            
+                    
+                    View绘制过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../android/canvas.html">
+            
+                <a href="../../android/canvas.html">
+            
+                    
+                    Canvas使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../../android/event.html">
+            
+                <a href="../../android/event.html">
+            
+                    
+                    事件分发机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../../android/binder.html">
+            
+                <a href="../../android/binder.html">
+            
+                    
+                    Binder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../../android/optimize.html">
+            
+                <a href="../../android/optimize.html">
+            
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../../android/push.html">
+            
+                <a href="../../android/push.html">
+            
+                    
+                    推送机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../../android/keep-live.html">
+            
+                <a href="../../android/keep-live.html">
+            
+                    
+                    进程保活
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../../android/activity-view-window.html">
+            
+                <a href="../../android/activity-view-window.html">
+            
+                    
+                    Activity、View及Window之间关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../../android/eventbus.html">
+            
+                <a href="../../android/eventbus.html">
+            
+                    
+                    EventBus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../../android/okhttp.html">
+            
+                <a href="../../android/okhttp.html">
+            
+                    
+                    OkHttp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../../android/intent.html">
+            
+                <a href="../../android/intent.html">
+            
+                    
+                    Intent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../../android/version.html">
+            
+                <a href="../../android/version.html">
+            
+                    
+                    版本问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="../../android/questions.html">
+            
+                <a href="../../android/questions.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    计算机基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../1-algo/">
+            
+                <a href="../1-algo/">
+            
+                    
+                    算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../1-algo/1-algo.html">
+            
+                <a href="../1-algo/1-algo.html">
+            
+                    
+                    基本算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../1-algo/1-tree.html">
+            
+                <a href="../1-algo/1-tree.html">
+            
+                    
+                    树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../1-algo/2-hash.html">
+            
+                <a href="../1-algo/2-hash.html">
+            
+                    
+                    Hash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../1-algo/3-mst.html">
+            
+                <a href="../1-algo/3-mst.html">
+            
+                    
+                    最小生成树算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../1-algo/4-path.html">
+            
+                <a href="../1-algo/4-path.html">
+            
+                    
+                    最短路径算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../1-algo/5-kmp.html">
+            
+                <a href="../1-algo/5-kmp.html">
+            
+                    
+                    KMP算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="../1-algo/6-search.html">
+            
+                <a href="../1-algo/6-search.html">
+            
+                    
+                    查找算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="../1-algo/7-sort.html">
+            
+                <a href="../1-algo/7-sort.html">
+            
+                    
+                    排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.9" data-path="../1-algo/9-skip_list.html">
+            
+                <a href="../1-algo/9-skip_list.html">
+            
+                    
+                    跳跃表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.10" data-path="../1-algo/8-questions.html">
+            
+                <a href="../1-algo/8-questions.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../2-op/">
+            
+                <a href="../2-op/">
+            
+                    
+                    操作系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../2-op/1-arch.html">
+            
+                <a href="../2-op/1-arch.html">
+            
+                    
+                    计算机体系结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../2-op/2-os.html">
+            
+                <a href="../2-op/2-os.html">
+            
+                    
+                    操作系统基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../2-op/3-concurrency.html">
+            
+                <a href="../2-op/3-concurrency.html">
+            
+                    
+                    并发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../2-op/4-memory.html">
+            
+                <a href="../2-op/4-memory.html">
+            
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../2-op/5-disk.html">
+            
+                <a href="../2-op/5-disk.html">
+            
+                    
+                    磁盘与文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="../2-op/6-linux.html">
+            
+                <a href="../2-op/6-linux.html">
+            
+                    
+                    Linux系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.7" data-path="../2-op/7-interrupt.html">
+            
+                <a href="../2-op/7-interrupt.html">
+            
+                    
+                    中断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.8" data-path="../2-op/8-device.html">
+            
+                <a href="../2-op/8-device.html">
+            
+                    
+                    设备管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.9" data-path="../2-op/9-io.html">
+            
+                <a href="../2-op/9-io.html">
+            
+                    
+                    I/O
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.10" data-path="../2-op/9-questions.html">
+            
+                <a href="../2-op/9-questions.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../3-net/">
+            
+                <a href="../3-net/">
+            
+                    
+                    计算机网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../3-net/1-osi.html">
+            
+                <a href="../3-net/1-osi.html">
+            
+                    
+                    网络分层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../3-net/2-base_protocol.html">
+            
+                <a href="../3-net/2-base_protocol.html">
+            
+                    
+                    底层网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../3-net/3-tcp.html">
+            
+                <a href="../3-net/3-tcp.html">
+            
+                    
+                    TCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../3-net/4-ip.html">
+            
+                <a href="../3-net/4-ip.html">
+            
+                    
+                    IP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="../3-net/5-http.html">
+            
+                <a href="../3-net/5-http.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="../3-net/6-https.html">
+            
+                <a href="../3-net/6-https.html">
+            
+                    
+                    HTTPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="../3-net/10-questions.html">
+            
+                <a href="../3-net/10-questions.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="1-transaction.html">
+            
+                <a href="1-transaction.html">
+            
+                    
+                    事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="2-index.html">
+            
+                <a href="2-index.html">
+            
+                    
+                    索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="3-sql.html">
+            
+                <a href="3-sql.html">
+            
+                    
+                    SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="4-join.html">
+            
+                <a href="4-join.html">
+            
+                    
+                    连接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="5-mysql.html">
+            
+                <a href="5-mysql.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="6-concurrent_control.html">
+            
+                <a href="6-concurrent_control.html">
+            
+                    
+                    并发控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.6.1" data-path="8-innodb.html">
+            
+                <a href="8-innodb.html">
+            
+                    
+                    Innodb
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4.7" data-path="7-redis.html">
+            
+                <a href="7-redis.html">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.8" data-path="10-questions.html">
+            
+                <a href="10-questions.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../cryptology.html">
+            
+                <a href="../cryptology.html">
+            
+                    
+                    密码学
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../java/">
+            
+                <a href="../../java/">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../java/1-oop.html">
+            
+                <a href="../../java/1-oop.html">
+            
+                    
+                    OOP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../java/10-serilaser.html">
+            
+                <a href="../../java/10-serilaser.html">
+            
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../java/2-operator.html">
+            
+                <a href="../../java/2-operator.html">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../java/3-exception.html">
+            
+                <a href="../../java/3-exception.html">
+            
+                    
+                    异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../java/4-generics.html">
+            
+                <a href="../../java/4-generics.html">
+            
+                    
+                    范型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../java/5-object.html">
+            
+                <a href="../../java/5-object.html">
+            
+                    
+                    Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../java/6-StringBuilder.html">
+            
+                <a href="../../java/6-StringBuilder.html">
+            
+                    
+                    StringBuilder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../../java/7-proxy.html">
+            
+                <a href="../../java/7-proxy.html">
+            
+                    
+                    代理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.8.1" data-path="../../java/8-annotation.html">
+            
+                <a href="../../java/8-annotation.html">
+            
+                    
+                    注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8.2" data-path="../../java/17-questions.html">
+            
+                <a href="../../java/17-questions.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../../java/collection/">
+            
+                <a href="../../java/collection/">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.9.1" data-path="../../java/collection/1-collection.html">
+            
+                <a href="../../java/collection/1-collection.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9.2" data-path="../../java/collection/2-HashMap.html">
+            
+                <a href="../../java/collection/2-HashMap.html">
+            
+                    
+                    HashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9.3" data-path="../../java/collection/3-Concurrenthashmap.html">
+            
+                <a href="../../java/collection/3-Concurrenthashmap.html">
+            
+                    
+                    Concurrenthashmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9.4" data-path="../../java/collection/4-BlockQueue.html">
+            
+                <a href="../../java/collection/4-BlockQueue.html">
+            
+                    
+                    BlockQueue
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../../java/concurrent/">
+            
+                <a href="../../java/concurrent/">
+            
+                    
+                    并发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.10.1" data-path="../../java/concurrent/1-thread.html">
+            
+                <a href="../../java/concurrent/1-thread.html">
+            
+                    
+                    线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.2" data-path="../../java/concurrent/2-volatile.html">
+            
+                <a href="../../java/concurrent/2-volatile.html">
+            
+                    
+                    Volatile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.3" data-path="../../java/concurrent/3-synchronized.html">
+            
+                <a href="../../java/concurrent/3-synchronized.html">
+            
+                    
+                    Synchronized
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.4" data-path="../../java/concurrent/4-AQS.html">
+            
+                <a href="../../java/concurrent/4-AQS.html">
+            
+                    
+                    AQS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.5" data-path="../../java/concurrent/7-CountDownLatch.html">
+            
+                <a href="../../java/concurrent/7-CountDownLatch.html">
+            
+                    
+                    CountDownLatch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.6" data-path="../../java/concurrent/5-threadlocal.html">
+            
+                <a href="../../java/concurrent/5-threadlocal.html">
+            
+                    
+                    Threadlocal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.7" data-path="../../java/concurrent/6-interrupt.html">
+            
+                <a href="../../java/concurrent/6-interrupt.html">
+            
+                    
+                    线程中断
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../../java/jvm/">
+            
+                <a href="../../java/jvm/">
+            
+                    
+                    Java 虚拟机
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.11.1" data-path="../../java/jvm/1-jvm-class-load-init.html">
+            
+                <a href="../../java/jvm/1-jvm-class-load-init.html">
+            
+                    
+                    类加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11.2" data-path="../../java/jvm/2-jvm-class-loader.html">
+            
+                <a href="../../java/jvm/2-jvm-class-loader.html">
+            
+                    
+                    类加载器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11.3" data-path="../../java/jvm/3-dispatcher.html">
+            
+                <a href="../../java/jvm/3-dispatcher.html">
+            
+                    
+                    Java分派机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11.4" data-path="../../java/jvm/4-jvm-architecture.html">
+            
+                <a href="../../java/jvm/4-jvm-architecture.html">
+            
+                    
+                    虚拟机架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11.5" data-path="../../java/jvm/5-memory-model.html">
+            
+                <a href="../../java/jvm/5-memory-model.html">
+            
+                    
+                    内存模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11.6" data-path="../../java/jvm/6-string-constant-pool.html">
+            
+                <a href="../../java/jvm/6-string-constant-pool.html">
+            
+                    
+                    String 常量池
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../../java/gc/">
+            
+                <a href="../../java/gc/">
+            
+                    
+                    GC
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.12.1" data-path="../../java/gc/11-jvm-gc.html">
+            
+                <a href="../../java/gc/11-jvm-gc.html">
+            
+                    
+                    Java 虚拟机垃圾收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12.2" data-path="../../java/gc/12-jvm-object-life-cycle.html">
+            
+                <a href="../../java/gc/12-jvm-object-life-cycle.html">
+            
+                    
+                    Java 虚拟机对象生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../fromwork/">
+            
+                <a href="../../fromwork/">
+            
+                    
+                    框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../fromwork/1-netty.html">
+            
+                <a href="../../fromwork/1-netty.html">
+            
+                    
+                    Netty
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../fromwork/mybatis/">
+            
+                <a href="../../fromwork/mybatis/">
+            
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../../fromwork/mybatis/1-question.html">
+            
+                <a href="../../fromwork/mybatis/1-question.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../../fromwork/mybatis/2-cache.html">
+            
+                <a href="../../fromwork/mybatis/2-cache.html">
+            
+                    
+                    缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../../fromwork/mybatis/3-proxy.html">
+            
+                <a href="../../fromwork/mybatis/3-proxy.html">
+            
+                    
+                    代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../fromwork/spring/">
+            
+                <a href="../../fromwork/spring/">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../fromwork/spring/1-ioc.html">
+            
+                <a href="../../fromwork/spring/1-ioc.html">
+            
+                    
+                    IOC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../fromwork/spring/2-design-partten.html">
+            
+                <a href="../../fromwork/spring/2-design-partten.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../../fromwork/spring/3-aop.html">
+            
+                <a href="../../fromwork/spring/3-aop.html">
+            
+                    
+                    AOP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../architecture/">
+            
+                <a href="../../architecture/">
+            
+                    
+                    系统架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../architecture/1-base.html">
+            
+                <a href="../../architecture/1-base.html">
+            
+                    
+                    基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../architecture/concurrent/">
+            
+                <a href="../../architecture/concurrent/">
+            
+                    
+                    高并发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../../architecture/concurrent/1-flow_control.html">
+            
+                <a href="../../architecture/concurrent/1-flow_control.html">
+            
+                    
+                    流量控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../architecture/design/">
+            
+                <a href="../../architecture/design/">
+            
+                    
+                    系统设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../../architecture/design/1-tinyURL.html">
+            
+                <a href="../../architecture/design/1-tinyURL.html">
+            
+                    
+                    短链接系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../architecture/distributed/">
+            
+                <a href="../../architecture/distributed/">
+            
+                    
+                    分布式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="../../architecture/distributed/1-session.html">
+            
+                <a href="../../architecture/distributed/1-session.html">
+            
+                    
+                    分布式 Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.2" data-path="../../architecture/distributed/2-cache.html">
+            
+                <a href="../../architecture/distributed/2-cache.html">
+            
+                    
+                    分布式缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.3" data-path="../../architecture/distributed/3-lock.html">
+            
+                <a href="../../architecture/distributed/3-lock.html">
+            
+                    
+                    分布式锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.4" data-path="../../architecture/distributed/4-transaction.html">
+            
+                <a href="../../architecture/distributed/4-transaction.html">
+            
+                    
+                    分布式事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.5" data-path="../../architecture/distributed/5-mq.html">
+            
+                <a href="../../architecture/distributed/5-mq.html">
+            
+                    
+                    消息队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.6" data-path="../../architecture/distributed/6-zk.html">
+            
+                <a href="../../architecture/distributed/6-zk.html">
+            
+                    
+                    Zookeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.7" data-path="../../architecture/distributed/7-kafka.html">
+            
+                <a href="../../architecture/distributed/7-kafka.html">
+            
+                    
+                    Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.8" data-path="../../architecture/distributed/8-rpc.html">
+            
+                <a href="../../architecture/distributed/8-rpc.html">
+            
+                    
+                    远程调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.9" data-path="../../architecture/distributed/9-dubbo.html">
+            
+                <a href="../../architecture/distributed/9-dubbo.html">
+            
+                    
+                    Dubbo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../offer/">
+            
+                <a href="../../offer/">
+            
+                    
+                    剑指offer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../offer/search-a-2d-matrix.html">
+            
+                <a href="../../offer/search-a-2d-matrix.html">
+            
+                    
+                    搜索二维矩阵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../offer/replay-space.html">
+            
+                <a href="../../offer/replay-space.html">
+            
+                    
+                    替换空格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../offer/print-link-from-tail.html">
+            
+                <a href="../../offer/print-link-from-tail.html">
+            
+                    
+                    从尾到头打印链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../offer/reConstructBinaryTree.html">
+            
+                <a href="../../offer/reConstructBinaryTree.html">
+            
+                    
+                    重建二叉树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../../offer/two-stack-fifo.html">
+            
+                <a href="../../offer/two-stack-fifo.html">
+            
+                    
+                    用两个栈实现一个队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../../offer/find-minimum-in-rotated-sorted-array.html">
+            
+                <a href="../../offer/find-minimum-in-rotated-sorted-array.html">
+            
+                    
+                    旋转数组的最小数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../../offer/fibonacci.html">
+            
+                <a href="../../offer/fibonacci.html">
+            
+                    
+                    斐波纳切数列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../../offer/number-of-one.html">
+            
+                <a href="../../offer/number-of-one.html">
+            
+                    
+                    二进制中1的个数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../../offer/power.html">
+            
+                <a href="../../offer/power.html">
+            
+                    
+                    数值的整数次方
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../../offer/printn.html">
+            
+                <a href="../../offer/printn.html">
+            
+                    
+                    打印最大的 n 位数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../../offer/O1DeleteNode.html">
+            
+                <a href="../../offer/O1DeleteNode.html">
+            
+                    
+                    在O(1)的时间复杂度下删除节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../../offer/reOrderArray.html">
+            
+                <a href="../../offer/reOrderArray.html">
+            
+                    
+                    调整数组顺序使奇数位于偶数前面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="../../offer/FindKthToTail.html">
+            
+                <a href="../../offer/FindKthToTail.html">
+            
+                    
+                    链表中倒数第k个结点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="../../offer/revert-link.html">
+            
+                <a href="../../offer/revert-link.html">
+            
+                    
+                    反转链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="../../offer/merge-sort-link.html">
+            
+                <a href="../../offer/merge-sort-link.html">
+            
+                    
+                    合并两个排序的链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.16" data-path="../../offer/HasSubtree.html">
+            
+                <a href="../../offer/HasSubtree.html">
+            
+                    
+                    树的子结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.17" data-path="../../offer/mirror-tree.html">
+            
+                <a href="../../offer/mirror-tree.html">
+            
+                    
+                    二叉树的镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.18" data-path="../../offer/PrintMatrix.html">
+            
+                <a href="../../offer/PrintMatrix.html">
+            
+                    
+                    顺时针打印矩阵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.19" data-path="../../offer/MinStack.html">
+            
+                <a href="../../offer/MinStack.html">
+            
+                    
+                    包含min函数的栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.20" data-path="../../offer/IsPopOrder.html">
+            
+                <a href="../../offer/IsPopOrder.html">
+            
+                    
+                    栈的压入、弹出序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.21" data-path="../../offer/PrintFromTopToBottom.html">
+            
+                <a href="../../offer/PrintFromTopToBottom.html">
+            
+                    
+                    从上往下打印二叉树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.22" data-path="../../offer/VerifySquenceOfBST.html">
+            
+                <a href="../../offer/VerifySquenceOfBST.html">
+            
+                    
+                    二叉搜索树的后序遍历序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.23" data-path="../../offer/FindPath.html">
+            
+                <a href="../../offer/FindPath.html">
+            
+                    
+                    二叉树中和为某一值的路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.24" data-path="../../offer/CloneLink.html">
+            
+                <a href="../../offer/CloneLink.html">
+            
+                    
+                    复杂链表的复制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.25" data-path="../../offer/BST-Link-Convert.html">
+            
+                <a href="../../offer/BST-Link-Convert.html">
+            
+                    
+                    二叉搜索树与双向链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.26" data-path="../../offer/Permutation.html">
+            
+                <a href="../../offer/Permutation.html">
+            
+                    
+                    字符串的排列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.27" data-path="../../offer/MoreThanHalfNum.html">
+            
+                <a href="../../offer/MoreThanHalfNum.html">
+            
+                    
+                    数组中出现次数超过一半的数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.28" data-path="../../offer/GetLeastNumbers.html">
+            
+                <a href="../../offer/GetLeastNumbers.html">
+            
+                    
+                    最小的K个数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.29" data-path="../../offer/FindGreatestSumOfSubArray.html">
+            
+                <a href="../../offer/FindGreatestSumOfSubArray.html">
+            
+                    
+                    连续子数组的最大和
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.30" data-path="../../offer/NumberOfOneBetweenOneAndN.html">
+            
+                <a href="../../offer/NumberOfOneBetweenOneAndN.html">
+            
+                    
+                    从1到n整数中1出现的次数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.31" data-path="../../offer/PrintMinNumber.html">
+            
+                <a href="../../offer/PrintMinNumber.html">
+            
+                    
+                    把数组排成最小的数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.32" data-path="../../offer/GetUglyNumber.html">
+            
+                <a href="../../offer/GetUglyNumber.html">
+            
+                    
+                    丑数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.33" data-path="../../offer/FirstNotRepeatingChar.html">
+            
+                <a href="../../offer/FirstNotRepeatingChar.html">
+            
+                    
+                    第一个只出现一次的字符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.34" data-path="../../offer/InversePairs.html">
+            
+                <a href="../../offer/InversePairs.html">
+            
+                    
+                    数组中的逆序对
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.35" data-path="../../offer/FindFirstCommonNode.html">
+            
+                <a href="../../offer/FindFirstCommonNode.html">
+            
+                    
+                    两个链表的第一个公共结点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.36" data-path="../../offer/GetNumberOfK.html">
+            
+                <a href="../../offer/GetNumberOfK.html">
+            
+                    
+                    数字在排序数组中出现的次数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.37" data-path="../../offer/TreeDepth.html">
+            
+                <a href="../../offer/TreeDepth.html">
+            
+                    
+                    二叉树的深度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.38" data-path="../../offer/FindNumsAppearOnce.html">
+            
+                <a href="../../offer/FindNumsAppearOnce.html">
+            
+                    
+                    数组中只出现一次的数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.39" data-path="../../offer/FindNumbersWithSum.html">
+            
+                <a href="../../offer/FindNumbersWithSum.html">
+            
+                    
+                    和为S的两个数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.40" data-path="../../offer/FindContinuousSequence.html">
+            
+                <a href="../../offer/FindContinuousSequence.html">
+            
+                    
+                    和为S的连续正数序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.41" data-path="../../offer/ReverseSentence.html">
+            
+                <a href="../../offer/ReverseSentence.html">
+            
+                    
+                    翻转单词顺序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.42" data-path="../../offer/LeftRotateString.html">
+            
+                <a href="../../offer/LeftRotateString.html">
+            
+                    
+                    左旋转字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.43" data-path="../../offer/SumOfNDice.html">
+            
+                <a href="../../offer/SumOfNDice.html">
+            
+                    
+                    n个骰子的点数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.44" data-path="../../offer/isContinuous.html">
+            
+                <a href="../../offer/isContinuous.html">
+            
+                    
+                    扑克牌顺子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.45" data-path="../../offer/LastRemaining.html">
+            
+                <a href="../../offer/LastRemaining.html">
+            
+                    
+                    圆圈中最后剩下的数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.46" data-path="../../offer/sum.html">
+            
+                <a href="../../offer/sum.html">
+            
+                    
+                    求1+2+3+...+n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.47" data-path="../../offer/Add.html">
+            
+                <a href="../../offer/Add.html">
+            
+                    
+                    不用加减乘除做加法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.48" data-path="../../offer/Singleton.html">
+            
+                <a href="../../offer/Singleton.html">
+            
+                    
+                    单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.49" data-path="../../offer/Duplicate.html">
+            
+                <a href="../../offer/Duplicate.html">
+            
+                    
+                    数组中重复的数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.50" data-path="../../offer/GetNext.html">
+            
+                <a href="../../offer/GetNext.html">
+            
+                    
+                    二叉树的下一个结点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.51" data-path="../../offer/hasPath.html">
+            
+                <a href="../../offer/hasPath.html">
+            
+                    
+                    矩阵中的路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.52" data-path="../../offer/MovingCount.html">
+            
+                <a href="../../offer/MovingCount.html">
+            
+                    
+                    机器人的运动范围
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.53" data-path="../../offer/CutRope.html">
+            
+                <a href="../../offer/CutRope.html">
+            
+                    
+                    剪绳子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.54" data-path="../../offer/PatternMatch.html">
+            
+                <a href="../../offer/PatternMatch.html">
+            
+                    
+                    正则表达式匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.55" data-path="../../offer/IsNumeric.html">
+            
+                <a href="../../offer/IsNumeric.html">
+            
+                    
+                    表示数值的字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.56" data-path="../../offer/EntryNodeOfLoop.html">
+            
+                <a href="../../offer/EntryNodeOfLoop.html">
+            
+                    
+                    链表中环的入口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.57" data-path="../../offer/IsSymmetrical.html">
+            
+                <a href="../../offer/IsSymmetrical.html">
+            
+                    
+                    对称二叉树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.58" data-path="../../offer/SerializeTree.html">
+            
+                <a href="../../offer/SerializeTree.html">
+            
+                    
+                    序列化二叉树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.59" data-path="../../offer/StreamMid.html">
+            
+                <a href="../../offer/StreamMid.html">
+            
+                    
+                    数据流中的中位数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.60" data-path="../../offer/NOfNumberSerialize.html">
+            
+                <a href="../../offer/NOfNumberSerialize.html">
+            
+                    
+                    数字序列中的某一位的数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.61" data-path="../../offer/TranslateNumToStr.html">
+            
+                <a href="../../offer/TranslateNumToStr.html">
+            
+                    
+                    把数字翻译成字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.62" data-path="../../offer/MaxGift.html">
+            
+                <a href="../../offer/MaxGift.html">
+            
+                    
+                    礼物的最大价值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.63" data-path="../../offer/LongestNoRepeatSubString.html">
+            
+                <a href="../../offer/LongestNoRepeatSubString.html">
+            
+                    
+                    最长不含重复字符的子字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.64" data-path="../../offer/CountOfSortedArray.html">
+            
+                <a href="../../offer/CountOfSortedArray.html">
+            
+                    
+                    在排序数组中查找数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.65" data-path="../../offer/BSTKthNode.html">
+            
+                <a href="../../offer/BSTKthNode.html">
+            
+                    
+                    二叉搜索树的第K大节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.66" data-path="../../offer/MaxInWindows.html">
+            
+                <a href="../../offer/MaxInWindows.html">
+            
+                    
+                    滑动窗口的最大值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.67" data-path="../../offer/MaxProfit.html">
+            
+                <a href="../../offer/MaxProfit.html">
+            
+                    
+                    股票的最大利润
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../leetcode/">
+            
+                <a href="../../leetcode/">
+            
+                    
+                    LeetCode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../leetcode/lengthOfLongestSubstring.html">
+            
+                <a href="../../leetcode/lengthOfLongestSubstring.html">
+            
+                    
+                    * 无重复字符的最长子串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../leetcode/longestCommonPrefix.html">
+            
+                <a href="../../leetcode/longestCommonPrefix.html">
+            
+                    
+                    最长公共前缀
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../leetcode/checkInclusion.html">
+            
+                <a href="../../leetcode/checkInclusion.html">
+            
+                    
+                    字符串的排列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../leetcode/StringMultiply.html">
+            
+                <a href="../../leetcode/StringMultiply.html">
+            
+                    
+                    字符串相乘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../leetcode/reverseWords.html">
+            
+                <a href="../../leetcode/reverseWords.html">
+            
+                    
+                    翻转字符串里的单词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../../leetcode/simplifyPath.html">
+            
+                <a href="../../leetcode/simplifyPath.html">
+            
+                    
+                    * 简化路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../../leetcode/restoreIpAddresses.html">
+            
+                <a href="../../leetcode/restoreIpAddresses.html">
+            
+                    
+                    * 复原IP地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../../leetcode/threeSum.html">
+            
+                <a href="../../leetcode/threeSum.html">
+            
+                    
+                    * 三数之和
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../../leetcode/maxAreaOfIsland.html">
+            
+                <a href="../../leetcode/maxAreaOfIsland.html">
+            
+                    
+                    * 岛屿的最大面积
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../../leetcode/searchRote.html">
+            
+                <a href="../../leetcode/searchRote.html">
+            
+                    
+                    * 搜索旋转排序数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../../leetcode/findLengthOfLCIS.html">
+            
+                <a href="../../leetcode/findLengthOfLCIS.html">
+            
+                    
+                    最长连续递增序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../../leetcode/findKthLargest.html">
+            
+                <a href="../../leetcode/findKthLargest.html">
+            
+                    
+                    数组中的第K个最大元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="../../leetcode/longestConsecutive.html">
+            
+                <a href="../../leetcode/longestConsecutive.html">
+            
+                    
+                    最长连续序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14" data-path="../../leetcode/findCircleNum.html">
+            
+                <a href="../../leetcode/findCircleNum.html">
+            
+                    
+                    * 朋友圈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.15" data-path="../../leetcode/mergeRagen.html">
+            
+                <a href="../../leetcode/mergeRagen.html">
+            
+                    
+                    合并区间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.16" data-path="../../leetcode/trap.html">
+            
+                <a href="../../leetcode/trap.html">
+            
+                    
+                    * 接雨水
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.17" data-path="../../leetcode/mergeTwoLists.html">
+            
+                <a href="../../leetcode/mergeTwoLists.html">
+            
+                    
+                    合并两个有序链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.18" data-path="../../leetcode/reverseList.html">
+            
+                <a href="../../leetcode/reverseList.html">
+            
+                    
+                    * 反转链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.19" data-path="../../leetcode/addTwoNumbers.html">
+            
+                <a href="../../leetcode/addTwoNumbers.html">
+            
+                    
+                    * 两数相加
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.20" data-path="../../leetcode/sortList.html">
+            
+                <a href="../../leetcode/sortList.html">
+            
+                    
+                    * 排序链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.21" data-path="../../leetcode/detectCycle.html">
+            
+                <a href="../../leetcode/detectCycle.html">
+            
+                    
+                    环形链表 II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.22" data-path="../../leetcode/getIntersectionNode.html">
+            
+                <a href="../../leetcode/getIntersectionNode.html">
+            
+                    
+                    相交链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.23" data-path="../../leetcode/mergeKLists.html">
+            
+                <a href="../../leetcode/mergeKLists.html">
+            
+                    
+                    * 合并K个排序链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.24" data-path="../../leetcode/lowestCommonAncestor.html">
+            
+                <a href="../../leetcode/lowestCommonAncestor.html">
+            
+                    
+                    二叉树的最近公共祖先
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.25" data-path="../../leetcode/zigzagLevelOrder.html">
+            
+                <a href="../../leetcode/zigzagLevelOrder.html">
+            
+                    
+                    二叉树的锯齿形层次遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.26" data-path="../../leetcode/maxProfit.html">
+            
+                <a href="../../leetcode/maxProfit.html">
+            
+                    
+                    * 买卖股票的最佳时机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.27" data-path="../../leetcode/maxProfit2.html">
+            
+                <a href="../../leetcode/maxProfit2.html">
+            
+                    
+                    * 买卖股票的最佳时机 II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.28" data-path="../../leetcode/maxSubArray.html">
+            
+                <a href="../../leetcode/maxSubArray.html">
+            
+                    
+                    最大子序和
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.29" data-path="../../leetcode/MinStack.html">
+            
+                <a href="../../leetcode/MinStack.html">
+            
+                    
+                    * 最小栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.30" data-path="../../leetcode/LRUCache.html">
+            
+                <a href="../../leetcode/LRUCache.html">
+            
+                    
+                    * LRU缓存机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.31" data-path="../../leetcode/AllOne.html">
+            
+                <a href="../../leetcode/AllOne.html">
+            
+                    
+                    全 O(1) 的数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.32" data-path="../../leetcode/mySqrt.html">
+            
+                <a href="../../leetcode/mySqrt.html">
+            
+                    
+                    * x 的平方根
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.33" data-path="../../leetcode/validUtf8.html">
+            
+                <a href="../../leetcode/validUtf8.html">
+            
+                    
+                    * UTF-8 编码验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.34" data-path="../../leetcode/salary.html">
+            
+                <a href="../../leetcode/salary.html">
+            
+                    
+                    * 第二高的薪水
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Redis</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#redis"><b></b>Redis</a></li><ul><li><span class="title-icon "></span><a href="#&#x7EBF;&#x7A0B;&#x6A21;&#x578B;"><b></b>&#x7EBF;&#x7A0B;&#x6A21;&#x578B;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4E3A;&#x5565;-redis-&#x5355;&#x7EBF;&#x7A0B;&#x6A21;&#x578B;&#x4E5F;&#x80FD;&#x6548;&#x7387;&#x8FD9;&#x4E48;&#x9AD8;&#xFF1F;"><b></b>&#x4E3A;&#x5565; redis &#x5355;&#x7EBF;&#x7A0B;&#x6A21;&#x578B;&#x4E5F;&#x80FD;&#x6548;&#x7387;&#x8FD9;&#x4E48;&#x9AD8;&#xFF1F;</a></li></ul><li><span class="title-icon "></span><a href="#&#x6570;&#x636E;&#x7ED3;&#x6784;"><b></b>&#x6570;&#x636E;&#x7ED3;&#x6784;</a></li><li><span class="title-icon "></span><a href="#&#x6301;&#x4E45;&#x5316;&#xFF1A;"><b></b>&#x6301;&#x4E45;&#x5316;&#xFF1A;</a></li><li><span class="title-icon "></span><a href="#&#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;"><b></b>&#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x9700;&#x6C42;"><b></b>&#x9700;&#x6C42;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x73B0;"><b></b>&#x5B9E;&#x73B0;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5B9E;&#x8DF5;"><b></b>&#x5B9E;&#x8DF5;</a></li><li><span class="title-icon "></span><a href="#&#x96C6;&#x7FA4;"><b></b>&#x96C6;&#x7FA4;</a></li><ul><li><span class="title-icon "></span><a href="#&#x54E8;&#x5175;----sentinel"><b></b>&#x54E8;&#x5175; -- Sentinel</a></li><li><span class="title-icon "></span><a href="#redis-cluster"><b></b>Redis Cluster</a></li><li><span class="title-icon "></span><a href="#redis-sharding-&#x96C6;&#x7FA4;"><b></b>Redis Sharding &#x96C6;&#x7FA4;</a></li></ul><li><span class="title-icon "></span><a href="#string"><b></b>string</a></li><ul><li><span class="title-icon "></span><a href="#&#x7F13;&#x51B2;&#x533A;&#x6EA2;&#x51FA;"><b></b>&#x7F13;&#x51B2;&#x533A;&#x6EA2;&#x51FA;</a></li><li><span class="title-icon "></span><a href="#&#x51CF;&#x5C11;&#x4FEE;&#x6539;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#x5E26;&#x6765;&#x7684;&#x5185;&#x5B58;&#x91CD;&#x5206;&#x914D;&#x6B21;&#x6570;"><b></b>&#x51CF;&#x5C11;&#x4FEE;&#x6539;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#x5E26;&#x6765;&#x7684;&#x5185;&#x5B58;&#x91CD;&#x5206;&#x914D;&#x6B21;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x4E8C;&#x8FDB;&#x5236;&#x5B89;&#x5168;"><b></b>&#x4E8C;&#x8FDB;&#x5236;&#x5B89;&#x5168;</a></li></ul><li><span class="title-icon "></span><a href="#zset&#x5E95;&#x5C42;&#x5B9E;&#x73B0;"><b></b>zset&#x5E95;&#x5C42;&#x5B9E;&#x73B0;</a></li><li><span class="title-icon "></span><a href="#&#x7F13;&#x5B58;&#x7A7F;&#x900F;&#x3001;&#x7F13;&#x5B58;&#x51FB;&#x7A7F;&#x3001;&#x7F13;&#x5B58;&#x96EA;&#x5D29;"><b></b>&#x7F13;&#x5B58;&#x7A7F;&#x900F;&#x3001;&#x7F13;&#x5B58;&#x51FB;&#x7A7F;&#x3001;&#x7F13;&#x5B58;&#x96EA;&#x5D29;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7F13;&#x5B58;&#x7A7F;&#x900F;"><b></b>&#x7F13;&#x5B58;&#x7A7F;&#x900F;</a></li><li><span class="title-icon "></span><a href="#&#x7F13;&#x5B58;&#x96EA;&#x5D29;"><b></b>&#x7F13;&#x5B58;&#x96EA;&#x5D29;</a></li><li><span class="title-icon "></span><a href="#&#x7F13;&#x5B58;&#x51FB;&#x7A7F;"><b></b>&#x7F13;&#x5B58;&#x51FB;&#x7A7F;</a></li></ul><li><span class="title-icon "></span><a href="#redis&#x5206;&#x5E03;&#x5F0F;&#x9501;"><b></b>Redis&#x5206;&#x5E03;&#x5F0F;&#x9501;</a></li><li><span class="title-icon "></span><a href="#&#x6570;&#x636E;&#x6DD8;&#x6C70;&#x673A;&#x5236;"><b></b>&#x6570;&#x636E;&#x6DD8;&#x6C70;&#x673A;&#x5236;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5BF9;&#x8C61;&#x8FC7;&#x671F;"><b></b>&#x5BF9;&#x8C61;&#x8FC7;&#x671F;</a></li><li><span class="title-icon "></span><a href="#&#x5185;&#x5B58;&#x6DD8;&#x6C70;"><b></b>&#x5185;&#x5B58;&#x6DD8;&#x6C70;</a></li></ul></ul></ul></div><a href="#redis" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="redis"><a name="redis" class="anchor-navigation-ex-anchor" href="#redis"><i class="fa fa-link" aria-hidden="true"></i></a>Redis</h1>
+<h2 id="&#x7EBF;&#x7A0B;&#x6A21;&#x578B;"><a name="&#x7EBF;&#x7A0B;&#x6A21;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x7EBF;&#x7A0B;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EBF;&#x7A0B;&#x6A21;&#x578B;</h2>
+<p>Redis &#x5728;&#x5904;&#x7406;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#x662F;&#x4F7F;&#x7528;&#x5355;&#x7EBF;&#x7A0B;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x901A;&#x8FC7; IO &#x591A;&#x8DEF;&#x590D;&#x7528;&#x6765;&#x63D0;&#x9AD8;&#x5E76;&#x53D1;&#x3002;&#x4F46;&#x662F;&#x5728;&#x5176;&#x4ED6;&#x6A21;&#x5757;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;&#x6301;&#x4E45;&#x5316;&#xFF0C;&#x4F1A;&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x3002;</p>
+<p>Redis &#x5185;&#x90E8;&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x5668; <code>file event handler</code>&#xFF0C;<strong>&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x5668;&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x7684;&#xFF0C;&#x6240;&#x4EE5; <code>redis</code> &#x624D;&#x53EB;&#x505A;&#x5355;&#x7EBF;&#x7A0B;&#x7684;&#x6A21;&#x578B;</strong>&#x3002;&#x5B83;&#x91C7;&#x7528; IO &#x591A;&#x8DEF;&#x590D;&#x7528;&#x673A;&#x5236;&#x540C;&#x65F6;&#x76D1;&#x542C;&#x591A;&#x4E2A; <code>socket</code> &#xFF0C;&#x5C06;&#x4EA7;&#x751F;&#x4E8B;&#x4EF6;&#x7684; <code>socket</code> &#x538B;&#x5165;&#x5185;&#x5B58;&#x961F;&#x5217;&#x4E2D;&#xFF0C;&#x4E8B;&#x4EF6;&#x5206;&#x6D3E;&#x5668;&#x6839;&#x636E; <code>socket</code> &#x4E0A;&#x7684;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&#x6765;&#x9009;&#x62E9;&#x5BF9;&#x5E94;&#x7684;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x5668;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;</p>
+<p>&#x6587;&#x4EF6;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x5668;&#x7684;&#x7ED3;&#x6784;&#x5305;&#x542B; 4 &#x4E2A;&#x90E8;&#x5206;&#xFF1A;</p>
+<ul>
+<li>&#x591A;&#x4E2A; socket</li>
+<li>IO &#x591A;&#x8DEF;&#x590D;&#x7528;&#x7A0B;&#x5E8F;</li>
+<li>&#x6587;&#x4EF6;&#x4E8B;&#x4EF6;&#x5206;&#x6D3E;&#x5668;</li>
+<li>&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x5668;&#xFF08;&#x8FDE;&#x63A5;&#x5E94;&#x7B54;&#x5904;&#x7406;&#x5668;&#x3001;&#x547D;&#x4EE4;&#x8BF7;&#x6C42;&#x5904;&#x7406;&#x5668;&#x3001;&#x547D;&#x4EE4;&#x56DE;&#x590D;&#x5904;&#x7406;&#x5668;&#xFF09;</li>
+</ul>
+<p>&#x591A;&#x4E2A; <code>socket</code> &#x53EF;&#x80FD;&#x4F1A;&#x5E76;&#x53D1;&#x4EA7;&#x751F;&#x4E0D;&#x540C;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x6BCF;&#x4E2A;&#x64CD;&#x4F5C;&#x5BF9;&#x5E94;&#x4E0D;&#x540C;&#x7684;&#x6587;&#x4EF6;&#x4E8B;&#x4EF6;&#xFF0C;&#x4F46;&#x662F; <code>IO</code> &#x591A;&#x8DEF;&#x590D;&#x7528;&#x7A0B;&#x5E8F;&#x4F1A;&#x76D1;&#x542C;&#x591A;&#x4E2A; <code>socket</code> &#xFF0C;&#x4F1A;&#x5C06;&#x4EA7;&#x751F;&#x4E8B;&#x4EF6;&#x7684; <code>socket</code> &#x653E;&#x5165;&#x961F;&#x5217;&#x4E2D;&#x6392;&#x961F;&#xFF0C;&#x4E8B;&#x4EF6;&#x5206;&#x6D3E;&#x5668;&#x6BCF;&#x6B21;&#x4ECE;&#x961F;&#x5217;&#x4E2D;&#x53D6;&#x51FA;&#x4E00;&#x4E2A; <code>socket</code> &#xFF0C;&#x6839;&#x636E; <code>socket</code> &#x7684;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&#x4EA4;&#x7ED9;&#x5BF9;&#x5E94;&#x7684;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x5668;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;</p>
+<p>&#x5BA2;&#x6237;&#x7AEF;&#x4E0E; redis &#x7684;&#x4E00;&#x6B21;&#x901A;&#x4FE1;&#x8FC7;&#x7A0B;&#xFF1A;</p>
+<p><img src="images/f0dacdd3779b836ad75fe6b886af1fff.png" alt="image"></p>
+<h3 id="&#x4E3A;&#x5565;-redis-&#x5355;&#x7EBF;&#x7A0B;&#x6A21;&#x578B;&#x4E5F;&#x80FD;&#x6548;&#x7387;&#x8FD9;&#x4E48;&#x9AD8;&#xFF1F;"><a name="&#x4E3A;&#x5565;-redis-&#x5355;&#x7EBF;&#x7A0B;&#x6A21;&#x578B;&#x4E5F;&#x80FD;&#x6548;&#x7387;&#x8FD9;&#x4E48;&#x9AD8;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x4E3A;&#x5565;-redis-&#x5355;&#x7EBF;&#x7A0B;&#x6A21;&#x578B;&#x4E5F;&#x80FD;&#x6548;&#x7387;&#x8FD9;&#x4E48;&#x9AD8;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3A;&#x5565; redis &#x5355;&#x7EBF;&#x7A0B;&#x6A21;&#x578B;&#x4E5F;&#x80FD;&#x6548;&#x7387;&#x8FD9;&#x4E48;&#x9AD8;&#xFF1F;</h3>
+<ul>
+<li>&#x7EAF;&#x5185;&#x5B58;&#x64CD;&#x4F5C;</li>
+<li>&#x6838;&#x5FC3;&#x662F;&#x57FA;&#x4E8E;&#x975E;&#x963B;&#x585E;&#x7684; IO &#x591A;&#x8DEF;&#x590D;&#x7528;&#x673A;&#x5236;</li>
+<li>&#x5355;&#x7EBF;&#x7A0B;&#x53CD;&#x800C;&#x907F;&#x514D;&#x4E86;&#x591A;&#x7EBF;&#x7A0B;&#x7684;&#x9891;&#x7E41;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x95EE;&#x9898;</li>
+</ul>
+<h2 id="&#x6570;&#x636E;&#x7ED3;&#x6784;"><a name="&#x6570;&#x636E;&#x7ED3;&#x6784;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x7ED3;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x7ED3;&#x6784;</h2>
+<p>Redis&#x7684;&#x5916;&#x56F4;&#x7531;&#x4E00;&#x4E2A;&#x952E;&#x3001;&#x503C;&#x6620;&#x5C04;&#x7684;&#x5B57;&#x5178;&#x6784;&#x6210;&#x3002;&#x4E0E;&#x5176;&#x4ED6;&#x975E;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x4E3B;&#x8981;&#x4E0D;&#x540C;&#x5728;&#x4E8E;&#xFF1A;Redis&#x4E2D;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x4E0D;&#x4EC5;&#x9650;&#x4E8E; <strong>&#x5B57;&#x7B26;&#x4E32;</strong>&#xFF0C;&#x8FD8;&#x652F;&#x6301;&#x5982;&#x4E0B;&#x62BD;&#x8C61;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1A;</p>
+<ul>
+<li><strong>List</strong>&#xFF1A;&#x5B57;&#x7B26;&#x4E32;&#x5217;&#x8868;</li>
+<li><strong>Set</strong>&#xFF1A;&#x65E0;&#x5E8F;&#x4E0D;&#x91CD;&#x590D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x96C6;&#x5408;</li>
+<li><strong>Soret Set</strong>&#xFF1A;&#x6709;&#x5E8F;&#x4E0D;&#x91CD;&#x590D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x96C6;&#x5408;</li>
+<li><strong>HashTable</strong>&#xFF1A;&#x952E;&#x3001;&#x503C;&#x90FD;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x54C8;&#x5E0C;&#x8868;</li>
+</ul>
+<p>&#x503C;&#x7684;&#x7C7B;&#x578B;&#x51B3;&#x5B9A;&#x4E86;&#x503C;&#x672C;&#x8EAB;&#x652F;&#x6301;&#x7684;&#x64CD;&#x4F5C;&#x3002;Redis&#x652F;&#x6301;&#x4E0D;&#x540C;&#x65E0;&#x5E8F;&#x3001;&#x6709;&#x5E8F;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x65E0;&#x5E8F;&#x3001;&#x6709;&#x5E8F;&#x7684;&#x96C6;&#x5408;&#x95F4;&#x7684;&#x4EA4;&#x96C6;&#x3001;&#x5E76;&#x96C6;&#x7B49;&#x9AD8;&#x7EA7;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x539F;&#x5B50;&#x64CD;&#x4F5C;&#x3002;</p>
+<h2 id="&#x6301;&#x4E45;&#x5316;&#xFF1A;"><a name="&#x6301;&#x4E45;&#x5316;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x6301;&#x4E45;&#x5316;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6301;&#x4E45;&#x5316;&#xFF1A;</h2>
+<ul>
+<li>&#x4F7F;&#x7528;&#x5FEB;&#x7167;&#xFF0C;&#x4E00;&#x79CD;&#x534A;&#x6301;&#x4E45;&#x8010;&#x7528;&#x6A21;&#x5F0F;&#x3002;&#x4E0D;&#x65F6;&#x7684;&#x5C06;&#x6570;&#x636E;&#x96C6;&#x4EE5;&#x5F02;&#x6B65;&#x65B9;&#x5F0F;&#x4ECE;&#x5185;&#x5B58;&#x4EE5;RDB&#x683C;&#x5F0F;&#x5199;&#x5165;&#x786C;&#x76D8;&#x3002;</li>
+<li>1.1&#x7248;&#x672C;&#x5F00;&#x59CB;&#x4F7F;&#x7528;&#x66F4;&#x5B89;&#x5168;&#x7684; <code>AOF</code> &#x683C;&#x5F0F;&#x66FF;&#x4EE3;&#xFF0C;&#x4E00;&#x79CD;&#x53EA;&#x80FD;&#x8FFD;&#x52A0;&#x7684;&#x65E5;&#x5FD7;&#x7C7B;&#x578B;&#x3002;&#x5C06;&#x6570;&#x636E;&#x96C6;&#x4FEE;&#x6539;&#x64CD;&#x4F5C;&#x8BB0;&#x5F55;&#x8D77;&#x6765;&#x3002;Redis &#x80FD;&#x591F;&#x5728;&#x540E;&#x53F0;&#x5BF9;&#x53EA;&#x53EF;&#x8FFD;&#x52A0;&#x7684;&#x8BB0;&#x5F55;&#x4F5C;&#x4FEE;&#x6539;&#x6765;&#x907F;&#x514D;&#x65E0;&#x9650;&#x589E;&#x957F;&#x7684;&#x65E5;&#x5FD7;&#x3002;</li>
+</ul>
+<pre class="language-"><code>  1. aof&#x6587;&#x4EF6;&#x6BD4;rdb&#x66F4;&#x65B0;&#x9891;&#x7387;&#x9AD8;&#xFF0C;&#x4F18;&#x5148;&#x4F7F;&#x7528;aof&#x8FD8;&#x539F;&#x6570;&#x636E;&#x3002;
+  2. aof&#x6BD4;rdb&#x66F4;&#x5B89;&#x5168;&#x4E5F;&#x66F4;&#x5927;
+  3. rdb&#x6027;&#x80FD;&#x6BD4;aof&#x597D;
+  4. &#x5982;&#x679C;&#x4E24;&#x4E2A;&#x90FD;&#x914D;&#x4E86;&#x4F18;&#x5148;&#x52A0;&#x8F7D;AOF
+</code></pre><h2 id="&#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;"><a name="&#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;</h2>
+<p>&#x4E00;&#x81F4;&#x54C8;&#x5E0C; &#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;&#x3002;&#x5728;&#x4F7F;&#x7528;&#x4E00;&#x81F4;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;&#x540E;&#xFF0C;&#x54C8;&#x5E0C;&#x8868;&#x69FD;&#x4F4D;&#x6570;&#xFF08;&#x5927;&#x5C0F;&#xFF09;&#x7684;&#x6539;&#x53D8;&#x5E73;&#x5747;&#x53EA;&#x9700;&#x8981;&#x5BF9; <code>K/n</code> &#x4E2A;&#x5173;&#x952E;&#x5B57;&#x91CD;&#x65B0;&#x6620;&#x5C04;&#xFF0C;&#x5176;&#x4E2D; <code>K</code> &#x662F;&#x5173;&#x952E;&#x5B57;&#x7684;&#x6570;&#x91CF;&#xFF0C;<code>n</code> &#x662F;&#x69FD;&#x4F4D;&#x6570;&#x91CF;&#x3002;&#x7136;&#x800C;&#x5728;&#x4F20;&#x7EDF;&#x7684;&#x54C8;&#x5E0C;&#x8868;&#x4E2D;&#xFF0C;&#x6DFB;&#x52A0;&#x6216;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x69FD;&#x4F4D;&#x7684;&#x51E0;&#x4E4E;&#x9700;&#x8981;&#x5BF9;&#x6240;&#x6709;&#x5173;&#x952E;&#x5B57;&#x8FDB;&#x884C;&#x91CD;&#x65B0;&#x6620;&#x5C04;&#x3002;</p>
+<blockquote>
+<p>&#x4E00;&#x81F4;&#x54C8;&#x5E0C;&#x4E5F;&#x53EF;&#x7528;&#x4E8E;&#x5B9E;&#x73B0;&#x5065;&#x58EE;&#x7F13;&#x5B58;&#x6765;&#x51CF;&#x5C11;&#x5927;&#x578B; Web &#x5E94;&#x7528;&#x4E2D;&#x7CFB;&#x7EDF;&#x90E8;&#x5206;&#x5931;&#x6548;&#x5E26;&#x6765;&#x7684;&#x8D1F;&#x9762;&#x5F71;&#x54CD;</p>
+</blockquote>
+<h3 id="&#x9700;&#x6C42;"><a name="&#x9700;&#x6C42;" class="anchor-navigation-ex-anchor" href="#&#x9700;&#x6C42;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9700;&#x6C42;</h3>
+<p>&#x5728;&#x4F7F;&#x7528; <code>n</code> &#x53F0;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x65F6;&#xFF0C;&#x4E00;&#x79CD;&#x5E38;&#x7528;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x65B9;&#x5F0F;&#x662F;&#xFF0C;&#x5BF9;&#x8D44;&#x6E90; <code>o</code> &#x7684;&#x8BF7;&#x6C42;&#x4F7F;&#x7528; <code>hash(o)= o mod n</code> &#x6765;&#x6620;&#x5C04;&#x5230;&#x67D0;&#x4E00;&#x53F0;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x3002;&#x5F53;&#x589E;&#x52A0;&#x6216;&#x51CF;&#x5C11;&#x4E00;&#x53F0;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x65F6;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x53EF;&#x80FD;&#x4F1A;&#x6539;&#x53D8;&#x6240;&#x6709;&#x8D44;&#x6E90;&#x5BF9;&#x5E94;&#x7684; <code>hash</code> &#x503C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6240;&#x6709;&#x7684;&#x7F13;&#x5B58;&#x90FD;&#x5931;&#x6548;&#x4E86;&#xFF0C;&#x8FD9;&#x4F1A;&#x4F7F;&#x5F97;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x5927;&#x91CF;&#x96C6;&#x4E2D;&#x5730;&#x5411;&#x539F;&#x59CB;&#x5185;&#x5BB9;&#x670D;&#x52A1;&#x5668;&#x66F4;&#x65B0;&#x7F13;&#x5B58;&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#x9700;&#x8981;&#x4E00;&#x81F4;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;&#x6765;&#x907F;&#x514D;&#x8FD9;&#x6837;&#x7684;&#x95EE;&#x9898;&#x3002; &#x4E00;&#x81F4;&#x54C8;&#x5E0C;&#x5C3D;&#x53EF;&#x80FD;&#x4F7F;&#x540C;&#x4E00;&#x4E2A;&#x8D44;&#x6E90;&#x6620;&#x5C04;&#x5230;&#x540C;&#x4E00;&#x53F0;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x8981;&#x6C42;&#x589E;&#x52A0;&#x4E00;&#x53F0;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x65F6;&#xFF0C;&#x65B0;&#x7684;&#x670D;&#x52A1;&#x5668;&#x5C3D;&#x91CF;&#x5206;&#x62C5;&#x5B58;&#x50A8;&#x5176;&#x4ED6;&#x6240;&#x6709;&#x670D;&#x52A1;&#x5668;&#x7684;&#x7F13;&#x5B58;&#x8D44;&#x6E90;&#x3002;&#x51CF;&#x5C11;&#x4E00;&#x53F0;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x65F6;&#xFF0C;&#x5176;&#x4ED6;&#x6240;&#x6709;&#x670D;&#x52A1;&#x5668;&#x4E5F;&#x53EF;&#x4EE5;&#x5C3D;&#x91CF;&#x5206;&#x62C5;&#x5B58;&#x50A8;&#x5B83;&#x7684;&#x7F13;&#x5B58;&#x8D44;&#x6E90;&#x3002;</p>
+<p>&#x4E00;&#x81F4;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;&#x7684;&#x4E3B;&#x8981;&#x601D;&#x60F3;&#x662F;&#x5C06;&#x6BCF;&#x4E2A;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x4E0E;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x54C8;&#x5E0C;&#x503C;&#x57DF;&#x533A;&#x95F4;&#x5173;&#x8054;&#x8D77;&#x6765;&#xFF0C;&#x5176;&#x4E2D;&#x533A;&#x95F4;&#x8FB9;&#x754C;&#x901A;&#x8FC7;&#x8BA1;&#x7B97;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x5BF9;&#x5E94;&#x7684;&#x54C8;&#x5E0C;&#x503C;&#x6765;&#x51B3;&#x5B9A;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x88AB;&#x79FB;&#x9664;&#xFF0C;&#x5219;&#x5B83;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x533A;&#x95F4;&#x4F1A;&#x88AB;&#x5E76;&#x5165;&#x5230;&#x90BB;&#x8FD1;&#x7684;&#x533A;&#x95F4;&#xFF0C;&#x5176;&#x4ED6;&#x7684;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x9700;&#x8981;&#x4EFB;&#x4F55;&#x6539;&#x53D8;&#x3002;</p>
+<h3 id="&#x5B9E;&#x73B0;"><a name="&#x5B9E;&#x73B0;" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9E;&#x73B0;</h3>
+<p>&#x4E00;&#x81F4;&#x54C8;&#x5E0C;&#x5C06;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x6620;&#x5C04;&#x5230;&#x5706;&#x73AF;&#x8FB9;&#x4E0A;&#x7684;&#x4E00;&#x4E2A;&#x70B9;&#xFF0C;&#x7CFB;&#x7EDF;&#x518D;&#x5C06;&#x53EF;&#x7528;&#x7684;&#x8282;&#x70B9;&#x673A;&#x5668;&#x6620;&#x5C04;&#x5230;&#x5706;&#x73AF;&#x7684;&#x4E0D;&#x540C;&#x4F4D;&#x7F6E;&#x3002;&#x67E5;&#x627E;&#x67D0;&#x4E2A;&#x5BF9;&#x8C61;&#x5BF9;&#x5E94;&#x7684;&#x673A;&#x5668;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x4E00;&#x81F4;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x5BF9;&#x8C61;&#x5BF9;&#x5E94;&#x5706;&#x73AF;&#x8FB9;&#x4E0A;&#x4F4D;&#x7F6E;&#xFF0C;&#x6CBF;&#x7740;&#x5706;&#x73AF;&#x8FB9;&#x4E0A;&#x67E5;&#x627E;&#x76F4;&#x5230;&#x9047;&#x5230;&#x67D0;&#x4E2A;&#x8282;&#x70B9;&#x673A;&#x5668;&#xFF0C;&#x8FD9;&#x53F0;&#x673A;&#x5668;&#x5373;&#x4E3A;&#x5BF9;&#x8C61;&#x5E94;&#x8BE5;&#x4FDD;&#x5B58;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x5F53;&#x5220;&#x9664;&#x4E00;&#x53F0;&#x8282;&#x70B9;&#x673A;&#x5668;&#x65F6;&#xFF0C;&#x8FD9;&#x53F0;&#x673A;&#x5668;&#x4E0A;&#x4FDD;&#x5B58;&#x7684;&#x6240;&#x6709;&#x5BF9;&#x8C61;&#x90FD;&#x8981;&#x79FB;&#x52A8;&#x5230;&#x4E0B;&#x4E00;&#x53F0;&#x673A;&#x5668;&#x3002;&#x6DFB;&#x52A0;&#x4E00;&#x53F0;&#x673A;&#x5668;&#x5230;&#x5706;&#x73AF;&#x8FB9;&#x4E0A;&#x67D0;&#x4E2A;&#x70B9;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x70B9;&#x7684;&#x4E0B;&#x4E00;&#x53F0;&#x673A;&#x5668;&#x9700;&#x8981;&#x5C06;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x524D;&#x5BF9;&#x5E94;&#x7684;&#x5BF9;&#x8C61;&#x79FB;&#x52A8;&#x5230;&#x65B0;&#x673A;&#x5668;&#x4E0A;&#x3002;&#x66F4;&#x6539;&#x5BF9;&#x8C61;&#x5728;&#x8282;&#x70B9;&#x673A;&#x5668;&#x4E0A;&#x7684;&#x5206;&#x5E03;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8C03;&#x6574;&#x8282;&#x70B9;&#x673A;&#x5668;&#x7684;&#x4F4D;&#x7F6E;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<h2 id="&#x5B9E;&#x8DF5;"><a name="&#x5B9E;&#x8DF5;" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x8DF5;"><i class="fa fa-link" aria-hidden="true"></i></a><a href="https://yikun.github.io/2016/06/09/%E4%B8%80%E8%87%B4%E6%80%A7%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95%E7%9A%84%E7%90%86%E8%A7%A3%E4%B8%8E%E5%AE%9E%E8%B7%B5/" target="_blank">&#x5B9E;&#x8DF5;</a></h2>
+<blockquote>
+<p>&#x5047;&#x8BBE;&#x6709;1000w&#x4E2A;&#x6570;&#x636E;&#x9879;&#xFF0C;100&#x4E2A;&#x5B58;&#x50A8;&#x8282;&#x70B9;&#xFF0C;&#x8BF7;&#x8BBE;&#x8BA1;&#x4E00;&#x79CD;&#x7B97;&#x6CD5;&#x5408;&#x7406;&#x5730;&#x5C06;&#x4ED6;&#x4EEC;&#x5B58;&#x50A8;&#x5728;&#x8FD9;&#x4E9B;&#x8282;&#x70B9;&#x4E0A;&#x3002;</p>
+</blockquote>
+<p>&#x770B;&#x4E00;&#x770B;&#x666E;&#x901A;Hash&#x7B97;&#x6CD5;&#x7684;&#x539F;&#x7406;&#xFF1A;</p>
+<p><img src="images/1c5e07626a9cadd5f1ea8acd85838067.png" alt=""></p>
+<pre class="language-"><code>for item in range(ITEMS):
+    k = md5(str(item)).digest()
+    h = unpack_from(&quot;&gt;I&quot;, k)[0]
+    # &#x901A;&#x8FC7;&#x53D6;&#x4F59;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x6620;&#x5C04;
+    n = h % NODES
+    node_stat[n] += 1
+</code></pre><p>&#x666E;&#x901A;&#x7684;Hash&#x7B97;&#x6CD5;&#x5747;&#x5300;&#x5730;&#x5C06;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x9879;&#x6253;&#x6563;&#x5230;&#x4E86;&#x8FD9;&#x4E9B;&#x8282;&#x70B9;&#x4E0A;&#xFF0C;&#x5E76;&#x4E14;&#x5206;&#x5E03;&#x6700;&#x5C11;&#x548C;&#x6700;&#x591A;&#x7684;&#x5B58;&#x50A8;&#x8282;&#x70B9;&#x6570;&#x636E;&#x9879;&#x6570;&#x76EE;&#x5C0F;&#x4E8E; <code>1%</code>&#x3002;&#x4E4B;&#x6240;&#x4EE5;&#x5206;&#x5E03;&#x5747;&#x5300;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x4F9D;&#x8D56; Hash &#x7B97;&#x6CD5;&#xFF08;&#x5B9E;&#x73B0;&#x4F7F;&#x7528;&#x7684;MD5&#x7B97;&#x6CD5;&#xFF09;&#x80FD;&#x591F;&#x6BD4;&#x8F83;&#x968F;&#x673A;&#x7684;&#x5206;&#x5E03;&#x3002;</p>
+<p>&#x7136;&#x800C;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x770B;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x7531;&#x4E8E; <strong>&#x8BE5;&#x7B97;&#x6CD5;&#x4F7F;&#x7528;&#x8282;&#x70B9;&#x6570;&#x53D6;&#x4F59;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5F3A;&#x4F9D;&#x8D56; <code>node</code> &#x7684;&#x6570;&#x76EE;</strong>&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5F53;&#x662F; <code>node</code> &#x6570;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x7684;&#x65F6;&#x5019;&#xFF0C;<code>item</code> &#x6240;&#x5BF9;&#x5E94;&#x7684; <code>node</code> &#x53D1;&#x751F;&#x5267;&#x70C8;&#x53D8;&#x5316;&#xFF0C;&#x800C;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x7684;&#x6210;&#x672C;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728; <code>node</code> &#x6570;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6570;&#x636E;&#x9700;&#x8981;&#x8FC1;&#x79FB;&#xFF0C;&#x8FD9;&#x5BF9;&#x5B58;&#x50A8;&#x4EA7;&#x54C1;&#x6765;&#x8BF4;&#x663E;&#x7136;&#x662F;&#x4E0D;&#x80FD;&#x5FCD;&#x7684;&#x3002;</p>
+<h4 id="&#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;"><a name="&#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;</h4>
+<p>&#x666E;&#x901A; <code>Hash</code> &#x7B97;&#x6CD5;&#x7684;&#x52A3;&#x52BF;&#xFF0C;&#x5373;&#x5F53; <code>node</code> &#x6570;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF08;&#x589E;&#x52A0;&#x3001;&#x79FB;&#x9664;&#xFF09;&#x540E;&#xFF0C;&#x6570;&#x636E;&#x9879;&#x4F1A;&#x88AB;&#x91CD;&#x65B0;&#x201C;&#x6253;&#x6563;&#x201D;&#xFF0C;&#x5BFC;&#x81F4;&#x5927;&#x90E8;&#x5206;&#x6570;&#x636E;&#x9879;&#x4E0D;&#x80FD;&#x843D;&#x5230;&#x539F;&#x6765;&#x7684;&#x8282;&#x70B9;&#x4E0A;&#xFF0C;&#x4ECE;&#x800C;&#x5BFC;&#x81F4;&#x5927;&#x91CF;&#x6570;&#x636E;&#x9700;&#x8981;&#x8FC1;&#x79FB;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#xFF0C;&#x4E00;&#x4E2A;&#x4E9F;&#x5F85;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x5C31;&#x53D8;&#x6210;&#x4E86;&#xFF1A;&#x5F53; <code>node</code> &#x6570;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x5982;&#x4F55;&#x4FDD;&#x8BC1;&#x5C3D;&#x91CF;&#x5C11;&#x5F15;&#x8D77;&#x8FC1;&#x79FB;&#x5462;&#xFF1F;&#x5373;&#x5F53;&#x589E;&#x52A0;&#x6216;&#x8005;&#x5220;&#x9664;&#x8282;&#x70B9;&#x65F6;&#xFF0C;&#x5BF9;&#x4E8E;&#x5927;&#x591A;&#x6570; item &#xFF0C;&#x4FDD;&#x8BC1;&#x539F;&#x6765;&#x5206;&#x914D;&#x5230;&#x7684;&#x67D0;&#x4E2A; node &#xFF0C;&#x73B0;&#x5728;&#x4ECD;&#x7136;&#x5E94;&#x8BE5;&#x5206;&#x914D;&#x5230;&#x90A3;&#x4E2A; node &#xFF0C;&#x5C06;&#x6570;&#x636E;&#x8FC1;&#x79FB;&#x91CF;&#x7684;&#x964D;&#x5230;&#x6700;&#x4F4E;&#x3002;</p>
+<p><img src="images/3de376ea57386b890483b27cf131f24d.png" alt=""></p>
+<pre class="language-"><code>for n in range(NODES):
+    h = _hash(n)
+    ring.append(h)
+    ring.sort()
+    hash2node[h] = n
+for item in range(ITEMS):
+    h = _hash(item)
+    n = bisect_left(ring, h) % NODES
+    node_stat[hash2node[ring[n]]] += 1
+</code></pre><p><strong>&#x867D;&#x7136;&#x4E00;&#x81F4;&#x6027;Hash&#x7B97;&#x6CD5;&#x89E3;&#x51B3;&#x4E86;&#x8282;&#x70B9;&#x53D8;&#x5316;&#x5BFC;&#x81F4;&#x7684;&#x6570;&#x636E;&#x8FC1;&#x79FB;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x6570;&#x636E;&#x9879;&#x5206;&#x5E03;&#x7684;&#x5747;&#x5300;&#x6027;&#x5F88;&#x5DEE;</strong>&#x3002;</p>
+<p><img src="images/5e6b9afd23ff44415b434d05ed0449ce.png" alt=""></p>
+<p>&#x4E3B;&#x8981;&#x662F;&#x56E0;&#x4E3A;&#x8FD9; 100 &#x4E2A;&#x8282;&#x70B9; Hash &#x540E;&#xFF0C;&#x5728;&#x73AF;&#x4E0A;&#x5206;&#x5E03;&#x4E0D;&#x5747;&#x5300;&#xFF0C;&#x5BFC;&#x81F4;&#x4E86;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x5B9E;&#x9645;&#x5360;&#x636E;&#x73AF;&#x4E0A;&#x7684;&#x533A;&#x95F4;&#x5927;&#x5C0F;&#x4E0D;&#x4E00;&#x9020;&#x6210;&#x7684;&#x3002;</p>
+<h4 id="&#x6539;&#x8FDB;----&#x865A;&#x8282;&#x70B9;"><a name="&#x6539;&#x8FDB;----&#x865A;&#x8282;&#x70B9;" class="anchor-navigation-ex-anchor" href="#&#x6539;&#x8FDB;----&#x865A;&#x8282;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6539;&#x8FDB; -- &#x865A;&#x8282;&#x70B9;</h4>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x5C06; node &#x8FDB;&#x884C;&#x54C8;&#x5E0C;&#x540E;&#xFF0C;&#x8FD9;&#x4E9B;&#x503C;&#x5E76;&#x6CA1;&#x6709;&#x5747;&#x5300;&#x5730;&#x843D;&#x5728;&#x73AF;&#x4E0A;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x6700;&#x7EC8;&#x4F1A;&#x5BFC;&#x81F4;&#xFF0C;&#x8FD9;&#x4E9B;&#x8282;&#x70B9;&#x6240;&#x7BA1;&#x8F96;&#x7684;&#x8303;&#x56F4;&#x5E76;&#x4E0D;&#x5747;&#x5300;&#xFF0C;&#x6700;&#x7EC8;&#x5BFC;&#x81F4;&#x4E86;&#x6570;&#x636E;&#x5206;&#x5E03;&#x7684;&#x4E0D;&#x5747;&#x5300;&#x3002;</p>
+<p><img src="images/c807b7a0af060a874fdb27abf5caf289.png" alt=""></p>
+<pre class="language-"><code>for n in range(NODES):
+    for v in range(VNODES):
+        h = _hash(str(n) + str(v))
+        # &#x6784;&#x9020;ring
+        ring.append(h)
+        # &#x8BB0;&#x5F55;hash&#x6240;&#x5BF9;&#x5E94;&#x8282;&#x70B9;
+        hash2node[h] = n
+ring.sort()
+for item in range(ITEMS):
+    h = _hash(str(item))
+    # &#x641C;&#x7D22;ring&#x4E0A;&#x6700;&#x8FD1;&#x7684;hash
+    n = bisect_left(ring, h) % (NODES*VNODES)
+    node_stat[hash2node[ring[n]]] += 1
+</code></pre><p>&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x865A;&#x8282;&#x70B9;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4F7F;&#x5F97;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x5728;&#x73AF;&#x4E0A;&#x6240;&#x201C;&#x7BA1;&#x8F96;&#x201D;&#x66F4;&#x52A0;&#x5747;&#x5300;&#x3002;&#x8FD9;&#x6837;&#x5C31;&#x65E2;&#x4FDD;&#x8BC1;&#x4E86;&#x5728;&#x8282;&#x70B9;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x5C3D;&#x53EF;&#x80FD;&#x5C0F;&#x7684;&#x5F71;&#x54CD;&#x6570;&#x636E;&#x5206;&#x5E03;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x800C;&#x540C;&#x65F6;&#x53C8;&#x4FDD;&#x8BC1;&#x4E86;&#x6570;&#x636E;&#x5206;&#x5E03;&#x7684;&#x5747;&#x5300;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x9760;&#x589E;&#x52A0;&#x201C;&#x8282;&#x70B9;&#x6570;&#x91CF;&#x201D;&#x52A0;&#x5F3A;&#x7BA1;&#x8F96;&#x533A;&#x95F4;&#x7684;&#x5747;&#x5300;&#x3002;</p>
+<h2 id="&#x96C6;&#x7FA4;"><a name="&#x96C6;&#x7FA4;" class="anchor-navigation-ex-anchor" href="#&#x96C6;&#x7FA4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x96C6;&#x7FA4;</h2>
+<h3 id="&#x54E8;&#x5175;----sentinel"><a name="&#x54E8;&#x5175;----sentinel" class="anchor-navigation-ex-anchor" href="#&#x54E8;&#x5175;----sentinel"><i class="fa fa-link" aria-hidden="true"></i></a>&#x54E8;&#x5175; -- Sentinel</h3>
+<p><code>Redis-Sentinel</code> &#x662F; Redis &#x5B98;&#x65B9;&#x63A8;&#x8350;&#x7684; <strong>&#x9AD8;&#x53EF;&#x7528;&#x6027;( <code>HA</code> )&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF0C;&#x5F53;&#x7528; Redis &#x505A; <code>Master-slave</code> &#x7684;&#x9AD8;&#x53EF;&#x7528;&#x65B9;&#x6848;&#x65F6;&#xFF0C;&#x5047;&#x5982; <code>master</code> &#x5B95;&#x673A;&#x4E86;&#xFF0C; Redis &#x672C;&#x8EAB;(&#x5305;&#x62EC;&#x5B83;&#x7684;&#x5F88;&#x591A;&#x5BA2;&#x6237;&#x7AEF;)&#x90FD;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x8FDB;&#x884C;&#x4E3B;&#x5907;&#x5207;&#x6362;&#xFF0C;&#x800C; <code>Redis-sentinel</code> &#x672C;&#x8EAB;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x8FD0;&#x884C;&#x7684;&#x8FDB;&#x7A0B;&#xFF0C;&#x5B83;&#x80FD;&#x76D1;&#x63A7;&#x591A;&#x4E2A; <code>master-slave</code> &#x96C6;&#x7FA4;&#xFF0C;&#x53D1;&#x73B0; <code>master</code> &#x5B95;&#x673A;&#x540E;&#x80FD;&#x8FDB;&#x884C;&#x81EA;&#x61C2;&#x5207;&#x6362;&#x3002;</p>
+<p>&#x5B83;&#x7684;&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x70B9;</p>
+<ul>
+<li>&#x4E0D;&#x65F6;&#x5730;&#x76D1;&#x63A7; redis &#x662F;&#x5426;&#x6309;&#x7167;&#x9884;&#x671F;&#x826F;&#x597D;&#x5730;&#x8FD0;&#x884C;;</li>
+<li>&#x5982;&#x679C;&#x53D1;&#x73B0;&#x67D0;&#x4E2A; redis &#x8282;&#x70B9;&#x8FD0;&#x884C;&#x51FA;&#x73B0;&#x72B6;&#x51B5;&#xFF0C;&#x80FD;&#x591F;&#x901A;&#x77E5;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;(&#x4F8B;&#x5982;&#x5B83;&#x7684;&#x5BA2;&#x6237;&#x7AEF;);</li>
+<li>&#x80FD;&#x591F;&#x8FDB;&#x884C;&#x81EA;&#x52A8;&#x5207;&#x6362;&#x3002;&#x5F53;&#x4E00;&#x4E2A; master &#x8282;&#x70B9;&#x4E0D;&#x53EF;&#x7528;&#x65F6;&#xFF0C;&#x80FD;&#x591F;&#x9009;&#x4E3E;&#x51FA; master &#x7684;&#x591A;&#x4E2A;slave (&#x5982;&#x679C;&#x6709;&#x8D85;&#x8FC7;&#x4E00;&#x4E2A; slave &#x7684;&#x8BDD;)&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6765;&#x4F5C;&#x4E3A;&#x65B0;&#x7684; master ,&#x5176;&#x5B83;&#x7684; slave &#x8282;&#x70B9;&#x4F1A;&#x5C06;&#x5B83;&#x6240;&#x8FFD;&#x968F;&#x7684; master &#x7684;&#x5730;&#x5740;&#x6539;&#x4E3A;&#x88AB;&#x63D0;&#x5347;&#x4E3A; master &#x7684; slave &#x7684;&#x65B0;&#x5730;&#x5740;&#x3002;</li>
+</ul>
+<p>&#x5F88;&#x663E;&#x7136;&#xFF0C;<strong>&#x53EA;&#x4F7F;&#x7528;&#x5355;&#x4E2A; sentinel &#x8FDB;&#x7A0B;&#x6765;&#x76D1;&#x63A7; redis &#x96C6;&#x7FA4;&#x662F;&#x4E0D;&#x53EF;&#x9760;&#x7684;</strong>&#xFF0C;&#x5F53; sentinel &#x8FDB;&#x7A0B;&#x5B95;&#x6389;&#x540E;( sentinel &#x672C;&#x8EAB;&#x4E5F;&#x6709;&#x5355;&#x70B9;&#x95EE;&#x9898;&#xFF0C;single-point-of-failure)&#x6574;&#x4E2A;&#x96C6;&#x7FA4;&#x7CFB;&#x7EDF;&#x5C06;&#x65E0;&#x6CD5;&#x6309;&#x7167;&#x9884;&#x671F;&#x7684;&#x65B9;&#x5F0F;&#x8FD0;&#x884C;&#x3002;&#x6240;&#x4EE5;&#x6709;&#x5FC5;&#x8981;&#x5C06;sentinel&#x96C6;&#x7FA4;&#xFF0C;&#x8FD9;&#x6837;&#x6709;&#x51E0;&#x4E2A;&#x597D;&#x5904;&#xFF1A;</p>
+<ul>
+<li>&#x5373;&#x4F7F;&#x6709;&#x4E00;&#x4E9B;sentinel&#x8FDB;&#x7A0B;&#x5B95;&#x6389;&#x4E86;&#xFF0C;&#x4F9D;&#x7136;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;redis&#x96C6;&#x7FA4;&#x7684;&#x4E3B;&#x5907;&#x5207;&#x6362;&#xFF1B;</li>
+<li>&#x5982;&#x679C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;sentinel&#x8FDB;&#x7A0B;&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x8FDB;&#x7A0B;&#x8FD0;&#x884C;&#x51FA;&#x9519;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x7F51;&#x7EDC;&#x5835;&#x585E;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x65E0;&#x6CD5;&#x5B9E;&#x73B0;redis&#x96C6;&#x7FA4;&#x7684;&#x4E3B;&#x5907;&#x5207;&#x6362;;</li>
+<li>&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;sentinel&#xFF0C;redis&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x4EE5;&#x968F;&#x610F;&#x5730;&#x8FDE;&#x63A5;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;sentinel&#x6765;&#x83B7;&#x5F97;&#x5173;&#x4E8E;redis&#x96C6;&#x7FA4;&#x4E2D;&#x7684;&#x4FE1;&#x606F;&#x3002;</li>
+</ul>
+<h3 id="redis-cluster"><a name="redis-cluster" class="anchor-navigation-ex-anchor" href="#redis-cluster"><i class="fa fa-link" aria-hidden="true"></i></a><a href="https://redis.io/topics/cluster-tutorial" target="_blank">Redis Cluster</a></h3>
+<p>Redis Cluster &#x662F;&#x4E00;&#x79CD;&#x670D;&#x52A1;&#x5668; <code>Sharding</code> &#x6280;&#x672F;&#xFF0C;3.0&#x7248;&#x672C;&#x5F00;&#x59CB;&#x6B63;&#x5F0F;&#x63D0;&#x4F9B;&#x3002;</p>
+<p>Redis Cluster&#x4E2D;&#xFF0C;Sharding &#x91C7;&#x7528; <em>slot(&#x69FD;)</em> &#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x4E00;&#x5171;&#x5206;&#x6210; <code>16384</code> &#x4E2A;&#x69FD;&#xFF0C;&#x8FD9;&#x6709;&#x70B9;&#x513F;&#x7C7B; <code>pre sharding</code> &#x601D;&#x8DEF;&#x3002;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x8FDB;&#x5165; Redis &#x7684;&#x952E;&#x503C;&#x5BF9;&#xFF0C;&#x6839;&#x636E; key &#x8FDB;&#x884C;&#x6563;&#x5217;&#xFF0C;&#x5206;&#x914D;&#x5230;&#x8FD9; <code>16384</code> &#x4E2A; slot &#x4E2D;&#x7684;&#x67D0;&#x4E00;&#x4E2A;&#x4E2D;&#x3002;&#x4F7F;&#x7528;&#x7684;hash&#x7B97;&#x6CD5;&#x4E5F;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#xFF0C;&#x5C31;&#x662F; <code>CRC16</code> &#x540E; <code>16384</code> &#x53D6;&#x6A21;&#x3002;&#x8981;&#x4FDD;&#x8BC1; <code>16384</code> &#x4E2A;&#x69FD;&#x5BF9;&#x5E94;&#x7684; node &#x90FD;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#xFF0C;<strong>&#x5982;&#x679C;&#x67D0;&#x4E2A; node &#x53D1;&#x751F;&#x6545;&#x969C;&#xFF0C;&#x90A3;&#x5B83;&#x8D1F;&#x8D23;&#x7684; slots &#x4E5F;&#x5C31;&#x5931;&#x6548;&#xFF0C;&#x6574;&#x4E2A;&#x96C6;&#x7FA4;&#x5C06;&#x4E0D;&#x80FD;&#x5DE5;&#x4F5C;</strong>&#x3002;</p>
+<blockquote>
+<p>16384 = 2048 * 8 bit&#xFF0C;2k &#x5927;&#x5C0F;&#x7684; bit &#x6570;</p>
+</blockquote>
+<p>&#x4E3A;&#x4E86;&#x589E;&#x52A0;&#x96C6;&#x7FA4;&#x7684;&#x53EF;&#x8BBF;&#x95EE;&#x6027;&#xFF0C;&#x5B98;&#x65B9;&#x63A8;&#x8350;&#x7684;&#x65B9;&#x6848;&#x662F;&#x5C06; node &#x914D;&#x7F6E;&#x6210; <strong>&#x4E3B;&#x4ECE;&#x7ED3;&#x6784;</strong>&#xFF0C;&#x5373;&#x4E00;&#x4E2A; master &#x4E3B;&#x8282;&#x70B9;&#xFF0C;&#x6302; <code>n</code> &#x4E2A; slave &#x4ECE;&#x8282;&#x70B9;&#x3002;&#x8FD9;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x4E3B;&#x8282;&#x70B9;&#x5931;&#x6548;&#xFF0C;Redis Cluster &#x4F1A;&#x6839;&#x636E;&#x9009;&#x4E3E;&#x7B97;&#x6CD5;&#x4ECE; slave &#x8282;&#x70B9;&#x4E2D;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x4E0A;&#x5347;&#x4E3A;&#x4E3B;&#x8282;&#x70B9;&#xFF0C;&#x6574;&#x4E2A;&#x96C6;&#x7FA4;&#x7EE7;&#x7EED;&#x5BF9;&#x5916;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x3002;</p>
+<p>&#x5BF9;&#x5BA2;&#x6237;&#x7AEF;&#x6765;&#x8BF4;&#xFF0C;<strong>&#x6574;&#x4E2A; cluster &#x88AB;&#x770B;&#x505A;&#x662F;&#x4E00;&#x4E2A;&#x6574;&#x4F53;</strong>&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x4EE5;&#x8FDE;&#x63A5;&#x4EFB;&#x610F;&#x4E00;&#x4E2A; node &#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x5C31;&#x50CF;&#x64CD;&#x4F5C;&#x5355;&#x4E00; Redis &#x5B9E;&#x4F8B;&#x4E00;&#x6837;&#xFF0C;&#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x64CD;&#x4F5C;&#x7684; key &#x6CA1;&#x6709;&#x5206;&#x914D;&#x5230;&#x8BE5; node &#x4E0A;&#x65F6;&#xFF0C;Redis &#x4F1A;&#x8FD4;&#x56DE;<strong>&#x8F6C;&#x5411;&#x6307;&#x4EE4;</strong>&#xFF0C;&#x6307;&#x5411;&#x6B63;&#x786E;&#x7684; node &#xFF0C;&#x8FD9;&#x6709;&#x70B9;&#x513F;&#x50CF;&#x6D4F;&#x89C8;&#x5668;&#x9875;&#x9762;&#x7684; <code>302  redirect</code> &#x8DF3;&#x8F6C;&#x3002;</p>
+<h3 id="redis-sharding-&#x96C6;&#x7FA4;"><a name="redis-sharding-&#x96C6;&#x7FA4;" class="anchor-navigation-ex-anchor" href="#redis-sharding-&#x96C6;&#x7FA4;"><i class="fa fa-link" aria-hidden="true"></i></a>Redis Sharding &#x96C6;&#x7FA4;</h3>
+<p>Redis Sharding &#x662F;&#x5BA2;&#x6237;&#x7AEF; Sharding &#x7684;&#x65B9;&#x6848;&#xFF0C;&#x5176;&#x4E3B;&#x8981;&#x601D;&#x60F3;&#x662F;&#x91C7;&#x7528;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5; <strong>&#x5C06; Redis &#x6570;&#x636E;&#x7684; key &#x8FDB;&#x884C;&#x6563;&#x5217;</strong>&#xFF0C;&#x901A;&#x8FC7; hash &#x51FD;&#x6570;&#xFF0C;&#x7279;&#x5B9A;&#x7684; key &#x4F1A;&#x6620;&#x5C04;&#x5230;&#x7279;&#x5B9A;&#x7684; Redis &#x8282;&#x70B9;&#x4E0A;&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x5C31;&#x77E5;&#x9053;&#x8BE5;&#x5411;&#x54EA;&#x4E2A; Redis &#x8282;&#x70B9;&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x3002;</p>
+<p>Jedis &#x7684; Redis Sharding &#x5B9E;&#x73B0;&#x5177;&#x6709;&#x5982;&#x4E0B;&#x7279;&#x70B9;&#xFF1A;</p>
+<ul>
+<li><strong>&#x91C7;&#x7528;&#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;(consistent hashing)</strong>&#xFF0C;&#x5C06;key&#x548C;&#x8282;&#x70B9;name&#x540C;&#x65F6;hashing&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x6620;&#x5C04;&#x5339;&#x914D;&#xFF0C;&#x91C7;&#x7528;&#x7684;&#x7B97;&#x6CD5;&#x662F;MURMUR_HASH&#x3002;&#x91C7;&#x7528;&#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;&#x800C;&#x4E0D;&#x662F;&#x91C7;&#x7528;&#x7B80;&#x5355;&#x7C7B;&#x4F3C;&#x54C8;&#x5E0C;&#x6C42;&#x6A21;&#x6620;&#x5C04;&#x7684;&#x4E3B;&#x8981;&#x539F;&#x56E0;&#x662F;&#x5F53;&#x589E;&#x52A0;&#x6216;&#x51CF;&#x5C11;&#x8282;&#x70B9;&#x65F6;&#xFF0C;&#x4E0D;&#x4F1A;&#x4EA7;&#x751F;&#x7531;&#x4E8E;&#x91CD;&#x65B0;&#x5339;&#x914D;&#x9020;&#x6210;&#x7684;rehashing&#x3002;&#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;&#x53EA;&#x5F71;&#x54CD;&#x76F8;&#x90BB;&#x8282;&#x70B9;key&#x5206;&#x914D;&#xFF0C;&#x5F71;&#x54CD;&#x91CF;&#x5C0F;&#x3002;</li>
+<li>&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;&#x53EA;&#x5F71;&#x54CD;&#x76F8;&#x90BB;&#x8282;&#x70B9;&#x9020;&#x6210;&#x8282;&#x70B9;&#x5206;&#x914D;&#x538B;&#x529B;&#xFF0C; <code>ShardedJedis</code> &#x4F1A;&#x5BF9;&#x6BCF;&#x4E2A;Redis &#x8282;&#x70B9;&#x6839;&#x636E;&#x540D;&#x5B57;(&#x6CA1;&#x6709;&#xFF0C;Jedis&#x4F1A;&#x8D4B;&#x4E88;&#x7F3A;&#x7701;&#x540D;&#x5B57;)&#x4F1A; <strong>&#x865A;&#x62DF;&#x5316;&#x51FA;160&#x4E2A;&#x865A;&#x62DF;&#x8282;&#x70B9;</strong> &#x8FDB;&#x884C;&#x6563;&#x5217;&#x3002;&#x6839;&#x636E;&#x6743;&#x91CD; <code>weight</code> &#xFF0C;&#x4E5F;&#x53EF;&#x865A;&#x62DF;&#x5316;&#x51FA;160&#x500D;&#x6570;&#x7684;&#x865A;&#x62DF;&#x8282;&#x70B9;&#x3002;&#x7528;&#x865A;&#x62DF;&#x8282;&#x70B9;&#x505A;&#x6620;&#x5C04;&#x5339;&#x914D;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x589E;&#x52A0;&#x6216;&#x51CF;&#x5C11; <code>Redis</code> &#x8282;&#x70B9;&#x65F6;&#xFF0C;key &#x5728;&#x5404; <code>Redis</code> &#x8282;&#x70B9;&#x79FB;&#x52A8;&#x518D;&#x5206;&#x914D;&#x66F4;&#x5747;&#x5300;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x53EA;&#x6709;&#x76F8;&#x90BB;&#x8282;&#x70B9;&#x53D7;&#x5F71;&#x54CD;&#x3002;</li>
+<li><strong>ShardedJedis &#x652F;&#x6301; keyTagPattern &#x6A21;&#x5F0F;</strong>&#xFF0C;&#x5373;&#x62BD;&#x53D6; key &#x7684;&#x4E00;&#x90E8;&#x5206; <code>keyTag</code> &#x505A; <code>sharding</code> &#xFF0C;&#x8FD9;&#x6837;&#x901A;&#x8FC7;&#x5408;&#x7406;&#x547D;&#x540D; key &#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x7EC4;&#x76F8;&#x5173;&#x8054;&#x7684;key&#x653E;&#x5165;&#x540C;&#x4E00;&#x4E2A; Redis &#x8282;&#x70B9;&#xFF0C;&#x8FD9;&#x5728;&#x907F;&#x514D;&#x8DE8;&#x8282;&#x70B9;&#x8BBF;&#x95EE;&#x76F8;&#x5173;&#x6570;&#x636E;&#x65F6;&#x5F88;&#x91CD;&#x8981;&#x3002;</li>
+</ul>
+<h2 id="string"><a name="string" class="anchor-navigation-ex-anchor" href="#string"><i class="fa fa-link" aria-hidden="true"></i></a>string</h2>
+<p>Redis &#x6CA1;&#x6709;&#x76F4;&#x63A5;&#x4F7F;&#x7528; C &#x8BED;&#x8A00;&#x4F20;&#x7EDF;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x793A;&#xFF08;&#x4EE5;&#x7A7A;&#x5B57;&#x7B26;&#x7ED3;&#x5C3E;&#x7684;&#x5B57;&#x7B26;&#x6570;&#x7EC4;&#xFF0C;&#x4EE5;&#x4E0B;&#x7B80;&#x79F0; C &#x5B57;&#x7B26;&#x4E32;&#xFF09;&#xFF0C; &#x800C;&#x662F;&#x81EA;&#x5DF1;&#x6784;&#x5EFA;&#x4E86;&#x4E00;&#x79CD;&#x540D;&#x4E3A;&#x7B80;&#x5355;&#x52A8;&#x6001;&#x5B57;&#x7B26;&#x4E32;&#xFF08;simple dynamic string&#xFF0C;SDS&#xFF09;&#x7684;&#x62BD;&#x8C61;&#x7C7B;&#x578B;&#xFF0C; &#x5E76;&#x5C06; SDS &#x7528;&#x4F5C; Redis &#x7684;&#x9ED8;&#x8BA4;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x793A;&#x3002;</p>
+<p>&#x5728; Redis &#x91CC;&#x9762;&#xFF0C; C &#x5B57;&#x7B26;&#x4E32;&#x53EA;&#x4F1A;&#x4F5C;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x5B57;&#x9762;&#x91CF;&#xFF08;string literal&#xFF09;&#xFF0C; &#x7528;&#x5728;&#x4E00;&#x4E9B;&#x65E0;&#x987B;&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x503C;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x7684;&#x5730;&#x65B9;&#xFF0C; &#x6BD4;&#x5982;&#x6253;&#x5370;&#x65E5;&#x5FD7;&#x3002;</p>
+<p>&#x5F53; Redis &#x9700;&#x8981;&#x7684;&#x4E0D;&#x4EC5;&#x4EC5;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5B57;&#x9762;&#x91CF;&#xFF0C; &#x800C;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x88AB;&#x4FEE;&#x6539;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x503C;&#x65F6;&#xFF0C; Redis &#x5C31;&#x4F1A;&#x4F7F;&#x7528; SDS &#x6765;&#x8868;&#x793A;&#x5B57;&#x7B26;&#x4E32;&#x503C;&#xFF1A; &#x6BD4;&#x5982;&#x5728; Redis &#x7684;&#x6570;&#x636E;&#x5E93;&#x91CC;&#x9762;&#xFF0C; &#x5305;&#x542B;&#x5B57;&#x7B26;&#x4E32;&#x503C;&#x7684;&#x952E;&#x503C;&#x5BF9;&#x5728;&#x5E95;&#x5C42;&#x90FD;&#x662F;&#x7531; SDS &#x5B9E;&#x73B0;&#x7684;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">C&#x5B57;&#x7B26;&#x4E32;</th>
+<th style="text-align:left">SDS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32;&#x957F;&#x5EA6;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x4E3A; O(N) &#x3002;</td>
+<td style="text-align:left">&#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32;&#x957F;&#x5EA6;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x4E3A; O(1) &#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">API &#x662F;&#x4E0D;&#x5B89;&#x5168;&#x7684;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x9020;&#x6210;&#x7F13;&#x51B2;&#x533A;&#x6EA2;&#x51FA;&#x3002;</td>
+<td style="text-align:left">API &#x662F;&#x5B89;&#x5168;&#x7684;&#xFF0C;&#x4E0D;&#x4F1A;&#x9020;&#x6210;&#x7F13;&#x51B2;&#x533A;&#x6EA2;&#x51FA;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x4FEE;&#x6539;&#x5B57;&#x7B26;&#x4E32;&#x957F;&#x5EA6; N &#x6B21;&#x5FC5;&#x7136;&#x9700;&#x8981;&#x6267;&#x884C; N &#x6B21;&#x5185;&#x5B58;&#x91CD;&#x5206;&#x914D;&#x3002;</td>
+<td style="text-align:left">&#x4FEE;&#x6539;&#x5B57;&#x7B26;&#x4E32;&#x957F;&#x5EA6; N &#x6B21;&#x6700;&#x591A;&#x9700;&#x8981;&#x6267;&#x884C; N &#x6B21;&#x5185;&#x5B58;&#x91CD;&#x5206;&#x914D;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x53EA;&#x80FD;&#x4FDD;&#x5B58;&#x6587;&#x672C;&#x6570;&#x636E;&#x3002;</td>
+<td style="text-align:left">&#x53EF;&#x4EE5;&#x4FDD;&#x5B58;&#x6587;&#x672C;&#x6216;&#x8005;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6240;&#x6709; <string.h> &#x5E93;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x3002;</string.h></td>
+<td style="text-align:left">&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x90E8;&#x5206; <string.h> &#x5E93;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x3002;</string.h></td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x7F13;&#x51B2;&#x533A;&#x6EA2;&#x51FA;"><a name="&#x7F13;&#x51B2;&#x533A;&#x6EA2;&#x51FA;" class="anchor-navigation-ex-anchor" href="#&#x7F13;&#x51B2;&#x533A;&#x6EA2;&#x51FA;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F13;&#x51B2;&#x533A;&#x6EA2;&#x51FA;</h3>
+<p>&#x56E0;&#x4E3A; C &#x5B57;&#x7B26;&#x4E32;&#x4E0D;&#x8BB0;&#x5F55;&#x81EA;&#x8EAB;&#x7684;&#x957F;&#x5EA6;&#xFF0C; &#x6240;&#x4EE5; <code>strcat</code> &#x5047;&#x5B9A;&#x7528;&#x6237;&#x5728;&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x65F6;&#xFF0C; &#x5DF2;&#x7ECF;&#x4E3A; <code>dest</code> &#x5206;&#x914D;&#x4E86;&#x8DB3;&#x591F;&#x591A;&#x7684;&#x5185;&#x5B58;&#xFF0C; &#x53EF;&#x4EE5;&#x5BB9;&#x7EB3; <code>src</code> &#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#xFF0C; &#x800C;&#x4E00;&#x65E6;&#x8FD9;&#x4E2A;&#x5047;&#x5B9A;&#x4E0D;&#x6210;&#x7ACB;&#x65F6;&#xFF0C; &#x5C31;&#x4F1A;&#x4EA7;&#x751F;&#x7F13;&#x51B2;&#x533A;&#x6EA2;&#x51FA;&#x3002;</p>
+<p>&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C; &#x5047;&#x8BBE;&#x7A0B;&#x5E8F;&#x91CC;&#x6709;&#x4E24;&#x4E2A;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7D27;&#x90BB;&#x7740;&#x7684; C &#x5B57;&#x7B26;&#x4E32; <code>s1</code> &#x548C; <code>s2</code> &#xFF0C; &#x5176;&#x4E2D; s1 &#x4FDD;&#x5B58;&#x4E86;&#x5B57;&#x7B26;&#x4E32; <code>&quot;Redis&quot;</code> &#xFF0C; &#x800C; s2 &#x5219;&#x4FDD;&#x5B58;&#x4E86;&#x5B57;&#x7B26;&#x4E32; <code>&quot;MongoDB&quot;</code> &#xFF0C; &#x5982;&#x56FE;&#x6240;&#x793A;&#x3002;</p>
+<p><img src="images/a9832e14ba184a4049f979e521ef050b.png" alt=""></p>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x5458;&#x51B3;&#x5B9A;&#x901A;&#x8FC7;&#x6267;&#x884C;&#xFF1A;</p>
+<pre class="language-"><code>strcat(s1, &quot; Cluster&quot;);
+</code></pre><p>&#x5C06; <code>s1</code> &#x7684;&#x5185;&#x5BB9;&#x4FEE;&#x6539;&#x4E3A; <code>&quot;Redis Cluster&quot;</code> &#xFF0C; &#x4F46;&#x7C97;&#x5FC3;&#x7684;&#x4ED6;&#x5374;&#x5FD8;&#x4E86;&#x5728;&#x6267;&#x884C; <code>strcat</code> &#x4E4B;&#x524D;&#x4E3A; <code>s1</code> &#x5206;&#x914D;&#x8DB3;&#x591F;&#x7684;&#x7A7A;&#x95F4;&#xFF0C; &#x90A3;&#x4E48;&#x5728; <code>strcat</code> &#x51FD;&#x6570;&#x6267;&#x884C;&#x4E4B;&#x540E;&#xFF0C; <code>s1</code> &#x7684;&#x6570;&#x636E;&#x5C06;&#x6EA2;&#x51FA;&#x5230; <code>s2</code> &#x6240;&#x5728;&#x7684;&#x7A7A;&#x95F4;&#x4E2D;&#xFF0C; &#x5BFC;&#x81F4; <code>s2</code> &#x4FDD;&#x5B58;&#x7684;&#x5185;&#x5BB9;&#x88AB;&#x610F;&#x5916;&#x5730;&#x4FEE;&#x6539;&#xFF0C; &#x5982;&#x56FE;&#x6240;&#x793A;&#x3002;</p>
+<p><img src="images/cc9ac0419ae3f5059076c2d66f867931.png" alt=""></p>
+<p>&#x4E0E; <code>C</code> &#x5B57;&#x7B26;&#x4E32;&#x4E0D;&#x540C;&#xFF0C; <code>SDS</code> &#x7684;&#x7A7A;&#x95F4;&#x5206;&#x914D;&#x7B56;&#x7565;&#x5B8C;&#x5168;&#x675C;&#x7EDD;&#x4E86;&#x53D1;&#x751F;&#x7F13;&#x51B2;&#x533A;&#x6EA2;&#x51FA;&#x7684;&#x53EF;&#x80FD;&#x6027;&#xFF1A; <strong>&#x5F53; SDS API &#x9700;&#x8981;&#x5BF9; SDS &#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x65F6;&#xFF0C; API &#x4F1A;&#x5148;&#x68C0;&#x67E5; SDS &#x7684;&#x7A7A;&#x95F4;&#x662F;&#x5426;&#x6EE1;&#x8DB3;&#x4FEE;&#x6539;&#x6240;&#x9700;&#x7684;&#x8981;&#x6C42;</strong>&#xFF0C; &#x5982;&#x679C;&#x4E0D;&#x6EE1;&#x8DB3;&#x7684;&#x8BDD;&#xFF0C; API &#x4F1A;&#x81EA;&#x52A8;&#x5C06; <code>SDS</code> &#x7684;&#x7A7A;&#x95F4;&#x6269;&#x5C55;&#x81F3;&#x6267;&#x884C;&#x4FEE;&#x6539;&#x6240;&#x9700;&#x7684;&#x5927;&#x5C0F;&#xFF0C; &#x7136;&#x540E;&#x624D;&#x6267;&#x884C;&#x5B9E;&#x9645;&#x7684;&#x4FEE;&#x6539;&#x64CD;&#x4F5C;&#xFF0C; &#x6240;&#x4EE5;&#x4F7F;&#x7528; <code>SDS</code> &#x65E2;&#x4E0D;&#x9700;&#x8981;&#x624B;&#x52A8;&#x4FEE;&#x6539; <code>SDS</code> &#x7684;&#x7A7A;&#x95F4;&#x5927;&#x5C0F;&#xFF0C; &#x4E5F;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x524D;&#x9762;&#x6240;&#x8BF4;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x6EA2;&#x51FA;&#x95EE;&#x9898;&#x3002;</p>
+<h3 id="&#x51CF;&#x5C11;&#x4FEE;&#x6539;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#x5E26;&#x6765;&#x7684;&#x5185;&#x5B58;&#x91CD;&#x5206;&#x914D;&#x6B21;&#x6570;"><a name="&#x51CF;&#x5C11;&#x4FEE;&#x6539;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#x5E26;&#x6765;&#x7684;&#x5185;&#x5B58;&#x91CD;&#x5206;&#x914D;&#x6B21;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x51CF;&#x5C11;&#x4FEE;&#x6539;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#x5E26;&#x6765;&#x7684;&#x5185;&#x5B58;&#x91CD;&#x5206;&#x914D;&#x6B21;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x51CF;&#x5C11;&#x4FEE;&#x6539;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#x5E26;&#x6765;&#x7684;&#x5185;&#x5B58;&#x91CD;&#x5206;&#x914D;&#x6B21;&#x6570;</h3>
+<ul>
+<li>&#x7A7A;&#x95F4;&#x9884;&#x5206;&#x914D;&#xFF1A;&#x89E3;&#x51B3; append &#x95EE;&#x9898;</li>
+<li>&#x60F0;&#x6027;&#x7A7A;&#x95F4;&#x91CA;&#x653E;&#xFF1A;&#x89E3;&#x51B3; strim &#x95EE;&#x9898;</li>
+</ul>
+<h3 id="&#x4E8C;&#x8FDB;&#x5236;&#x5B89;&#x5168;"><a name="&#x4E8C;&#x8FDB;&#x5236;&#x5B89;&#x5168;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x8FDB;&#x5236;&#x5B89;&#x5168;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x8FDB;&#x5236;&#x5B89;&#x5168;</h3>
+<p>C &#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x5FC5;&#x987B;&#x7B26;&#x5408;&#x67D0;&#x79CD;&#x7F16;&#x7801;&#xFF08;&#x6BD4;&#x5982; <code>ASCII</code>&#xFF09;&#xFF0C; &#x5E76;&#x4E14; <strong>&#x9664;&#x4E86;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x672B;&#x5C3E;&#x4E4B;&#x5916;&#xFF0C; &#x5B57;&#x7B26;&#x4E32;&#x91CC;&#x9762;&#x4E0D;&#x80FD;&#x5305;&#x542B;&#x7A7A;&#x5B57;&#x7B26;</strong>&#xFF0C; &#x5426;&#x5219;&#x6700;&#x5148;&#x88AB;&#x7A0B;&#x5E8F;&#x8BFB;&#x5165;&#x7684;&#x7A7A;&#x5B57;&#x7B26;&#x5C06;&#x88AB;&#x8BEF;&#x8BA4;&#x4E3A;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x7ED3;&#x5C3E; &#x2014;&#x2014; &#x8FD9;&#x4E9B;&#x9650;&#x5236;&#x4F7F;&#x5F97; C &#x5B57;&#x7B26;&#x4E32;&#x53EA;&#x80FD;&#x4FDD;&#x5B58;&#x6587;&#x672C;&#x6570;&#x636E;&#xFF0C; &#x800C;&#x4E0D;&#x80FD;&#x4FDD;&#x5B58;&#x50CF;&#x56FE;&#x7247;&#x3001;&#x97F3;&#x9891;&#x3001;&#x89C6;&#x9891;&#x3001;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x8FD9;&#x6837;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x3002;</p>
+<h2 id="zset&#x5E95;&#x5C42;&#x5B9E;&#x73B0;"><a name="zset&#x5E95;&#x5C42;&#x5B9E;&#x73B0;" class="anchor-navigation-ex-anchor" href="#zset&#x5E95;&#x5C42;&#x5B9E;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>zset&#x5E95;&#x5C42;&#x5B9E;&#x73B0;</h2>
+<p>&#x8DF3;&#x8DC3;&#x8868;&#xFF08;skiplist&#xFF09;&#x662F;&#x4E00;&#x79CD;&#x6709;&#x5E8F;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C; &#x5B83;&#x901A;&#x8FC7;&#x5728;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x4E2D;&#x7EF4;&#x6301;&#x591A;&#x4E2A;&#x6307;&#x5411;&#x5176;&#x4ED6;&#x8282;&#x70B9;&#x7684;&#x6307;&#x9488;&#xFF0C; &#x4ECE;&#x800C;&#x8FBE;&#x5230;&#x5FEB;&#x901F;&#x8BBF;&#x95EE;&#x8282;&#x70B9;&#x7684;&#x76EE;&#x7684;&#x3002;</p>
+<p><code>Redis</code> &#x4F7F;&#x7528;&#x8DF3;&#x8DC3;&#x8868;&#x4F5C;&#x4E3A;&#x6709;&#x5E8F;&#x96C6;&#x5408;&#x952E;&#x7684;&#x5E95;&#x5C42;&#x5B9E;&#x73B0;&#x4E4B;&#x4E00;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x6709;&#x5E8F;&#x96C6;&#x5408;&#x5305;&#x542B;&#x7684;&#x5143;&#x7D20;&#x6570;&#x91CF;&#x6BD4;&#x8F83;&#x591A;&#xFF0C;</li>
+<li>&#x6709;&#x5E8F;&#x96C6;&#x5408;&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x6210;&#x5458;&#xFF08;<code>member</code>&#xFF09;&#x662F;&#x6BD4;&#x8F83;&#x957F;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x65F6;</li>
+</ul>
+<p>Redis &#x5C31;&#x4F1A;&#x4F7F;&#x7528;&#x8DF3;&#x8DC3;&#x8868;&#x6765;&#x4F5C;&#x4E3A;&#x6709;&#x5E8F;&#x96C6;&#x5408;&#x952E;&#x7684;&#x5E95;&#x5C42;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x548C;&#x94FE;&#x8868;&#x3001;&#x5B57;&#x5178;&#x7B49;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x88AB;&#x5E7F;&#x6CDB;&#x5730;&#x5E94;&#x7528;&#x5728; Redis &#x5185;&#x90E8;&#x4E0D;&#x540C;&#xFF0C; <strong>Redis &#x53EA;&#x5728;&#x4E24;&#x4E2A;&#x5730;&#x65B9;&#x7528;&#x5230;&#x4E86;&#x8DF3;&#x8DC3;&#x8868;&#xFF0C; &#x4E00;&#x4E2A;&#x662F;&#x5B9E;&#x73B0;&#x6709;&#x5E8F;&#x96C6;&#x5408;&#x952E;&#xFF0C; &#x53E6;&#x4E00;&#x4E2A;&#x662F;&#x5728;&#x96C6;&#x7FA4;&#x8282;&#x70B9;&#x4E2D;&#x7528;&#x4F5C;&#x5185;&#x90E8;&#x6570;&#x636E;&#x7ED3;&#x6784;</strong>&#xFF0C; &#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C; &#x8DF3;&#x8DC3;&#x8868;&#x5728; Redis &#x91CC;&#x9762;&#x6CA1;&#x6709;&#x5176;&#x4ED6;&#x7528;&#x9014;&#x3002;</p>
+<h2 id="&#x7F13;&#x5B58;&#x7A7F;&#x900F;&#x3001;&#x7F13;&#x5B58;&#x51FB;&#x7A7F;&#x3001;&#x7F13;&#x5B58;&#x96EA;&#x5D29;"><a name="&#x7F13;&#x5B58;&#x7A7F;&#x900F;&#x3001;&#x7F13;&#x5B58;&#x51FB;&#x7A7F;&#x3001;&#x7F13;&#x5B58;&#x96EA;&#x5D29;" class="anchor-navigation-ex-anchor" href="#&#x7F13;&#x5B58;&#x7A7F;&#x900F;&#x3001;&#x7F13;&#x5B58;&#x51FB;&#x7A7F;&#x3001;&#x7F13;&#x5B58;&#x96EA;&#x5D29;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F13;&#x5B58;&#x7A7F;&#x900F;&#x3001;&#x7F13;&#x5B58;&#x51FB;&#x7A7F;&#x3001;&#x7F13;&#x5B58;&#x96EA;&#x5D29;</h2>
+<h3 id="&#x7F13;&#x5B58;&#x7A7F;&#x900F;"><a name="&#x7F13;&#x5B58;&#x7A7F;&#x900F;" class="anchor-navigation-ex-anchor" href="#&#x7F13;&#x5B58;&#x7A7F;&#x900F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F13;&#x5B58;&#x7A7F;&#x900F;</h3>
+<p>&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x4E0D;&#x5B58;&#x5728;&#x7684;key&#xFF0C;&#x7F13;&#x5B58;&#x4E0D;&#x8D77;&#x4F5C;&#x7528;&#xFF0C;&#x8BF7;&#x6C42;&#x4F1A;&#x7A7F;&#x900F;&#x5230; DB&#xFF0C;&#x6D41;&#x91CF;&#x5927;&#x65F6; DB &#x4F1A;&#x6302;&#x6389;&#x3002;</p>
+<h4 id="&#x89E3;&#x51B3;&#x65B9;&#x6848;"><a name="&#x89E3;&#x51B3;&#x65B9;&#x6848;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x51B3;&#x65B9;&#x6848;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x51B3;&#x65B9;&#x6848;</h4>
+<ul>
+<li><p>&#x91C7;&#x7528;&#x5E03;&#x9686;&#x8FC7;&#x6EE4;&#x5668;&#xFF0C;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x8DB3;&#x591F;&#x5927;&#x7684;<code>bitmap</code>&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x53EF;&#x80FD;&#x8BBF;&#x95EE;&#x7684; <code>key</code>&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x7684;key&#x76F4;&#x63A5;&#x88AB;&#x8FC7;&#x6EE4;&#xFF1B;</p>
+</li>
+<li><p>&#x8BBF;&#x95EE;key&#x672A;&#x5728;DB&#x67E5;&#x8BE2;&#x5230;&#x503C;&#xFF0C;&#x4E5F;&#x5C06;&#x7A7A;&#x503C;&#x5199;&#x8FDB;&#x7F13;&#x5B58;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x8F83;&#x77ED;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x3002;</p>
+</li>
+</ul>
+<h3 id="&#x7F13;&#x5B58;&#x96EA;&#x5D29;"><a name="&#x7F13;&#x5B58;&#x96EA;&#x5D29;" class="anchor-navigation-ex-anchor" href="#&#x7F13;&#x5B58;&#x96EA;&#x5D29;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F13;&#x5B58;&#x96EA;&#x5D29;</h3>
+<p>&#x5927;&#x91CF;&#x7684; key &#x8BBE;&#x7F6E;&#x4E86;&#x76F8;&#x540C;&#x7684;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#xFF0C;&#x5BFC;&#x81F4;&#x5728;&#x7F13;&#x5B58;&#x5728;&#x540C;&#x4E00;&#x65F6;&#x523B;&#x5168;&#x90E8;&#x5931;&#x6548;&#xFF0C;&#x9020;&#x6210;&#x77AC;&#x65F6;DB&#x8BF7;&#x6C42;&#x91CF;&#x5927;&#x3001;&#x538B;&#x529B;&#x9AA4;&#x589E;&#xFF0C;&#x5F15;&#x8D77;&#x96EA;&#x5D29;&#x3002;</p>
+<h4 id="&#x89E3;&#x51B3;&#x65B9;&#x6848;_1"><a name="&#x89E3;&#x51B3;&#x65B9;&#x6848;_1" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x51B3;&#x65B9;&#x6848;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x51B3;&#x65B9;&#x6848;</h4>
+<p>&#x53EF;&#x4EE5;&#x7ED9;&#x7F13;&#x5B58;&#x8BBE;&#x7F6E;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x65F6;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x503C;&#x65F6;&#x95F4;&#xFF0C;&#x4F7F;&#x5F97;&#x6BCF;&#x4E2A; key &#x7684;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x5206;&#x5E03;&#x5F00;&#x6765;&#xFF0C;&#x4E0D;&#x4F1A;&#x96C6;&#x4E2D;&#x5728;&#x540C;&#x4E00;&#x65F6;&#x523B;&#x5931;&#x6548;&#x3002;</p>
+<h3 id="&#x7F13;&#x5B58;&#x51FB;&#x7A7F;"><a name="&#x7F13;&#x5B58;&#x51FB;&#x7A7F;" class="anchor-navigation-ex-anchor" href="#&#x7F13;&#x5B58;&#x51FB;&#x7A7F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F13;&#x5B58;&#x51FB;&#x7A7F;</h3>
+<p>&#x5BF9;&#x4E8E;&#x4E00;&#x4E9B;&#x8BBE;&#x7F6E;&#x4E86;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x7684;key&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x4E9B;key&#x53EF;&#x80FD;&#x4F1A;&#x5728;&#x67D0;&#x4E9B;&#x65F6;&#x95F4;&#x70B9;&#x88AB;&#x8D85;&#x9AD8;&#x5E76;&#x53D1;&#x5730;&#x8BBF;&#x95EE;&#xFF0C;&#x662F;&#x4E00;&#x79CD;&#x975E;&#x5E38;&#x201C;&#x70ED;&#x70B9;&#x201D;&#x7684;&#x6570;&#x636E;&#x3002;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x9700;&#x8981;&#x8003;&#x8651;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF1A;&#x7F13;&#x5B58;&#x88AB;&#x201C;&#x51FB;&#x7A7F;&#x201D;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x8FD9;&#x4E2A;&#x548C;&#x7F13;&#x5B58;&#x96EA;&#x5D29;&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#x8FD9;&#x91CC;&#x9488;&#x5BF9;&#x67D0;&#x4E00; key &#x7F13;&#x5B58;&#xFF0C;&#x524D;&#x8005;&#x5219;&#x662F;&#x5F88;&#x591A;key&#x3002;</p>
+<p>&#x7F13;&#x5B58;&#x5728;&#x67D0;&#x4E2A;&#x65F6;&#x95F4;&#x70B9;&#x8FC7;&#x671F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6070;&#x597D;&#x5728;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x70B9;&#x5BF9;&#x8FD9;&#x4E2A;Key&#x6709;&#x5927;&#x91CF;&#x7684;&#x5E76;&#x53D1;&#x8BF7;&#x6C42;&#x8FC7;&#x6765;&#xFF0C;&#x8FD9;&#x4E9B;&#x8BF7;&#x6C42;&#x53D1;&#x73B0;&#x7F13;&#x5B58;&#x8FC7;&#x671F;&#x4E00;&#x822C;&#x90FD;&#x4F1A;&#x4ECE;&#x540E;&#x7AEF;DB&#x52A0;&#x8F7D;&#x6570;&#x636E;&#x5E76;&#x56DE;&#x8BBE;&#x5230;&#x7F13;&#x5B58;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x5927;&#x5E76;&#x53D1;&#x7684;&#x8BF7;&#x6C42;&#x53EF;&#x80FD;&#x4F1A;&#x77AC;&#x95F4;&#x628A;&#x540E;&#x7AEF; DB &#x538B;&#x57AE;&#x3002;</p>
+<h4 id="&#x89E3;&#x51B3;&#x65B9;&#x6848;_2"><a name="&#x89E3;&#x51B3;&#x65B9;&#x6848;_2" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x51B3;&#x65B9;&#x6848;_2"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x51B3;&#x65B9;&#x6848;</h4>
+<p>&#x5728;&#x7F13;&#x5B58;&#x5931;&#x6548;&#x7684;&#x65F6;&#x5019;&#xFF08;&#x5224;&#x65AD;&#x62FF;&#x51FA;&#x6765;&#x7684;&#x503C;&#x4E3A;&#x7A7A;&#xFF09;&#xFF0C;&#x4E0D;&#x662F;&#x7ACB;&#x5373;&#x53BB; <code>load db</code> &#xFF0C;&#x800C;&#x662F;&#x5148;&#x4F7F;&#x7528;&#x7F13;&#x5B58;&#x5DE5;&#x5177;&#x7684;&#x67D0;&#x4E9B;&#x5E26;&#x6210;&#x529F;&#x64CD;&#x4F5C;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x64CD;&#x4F5C;&#xFF08;&#x6BD4;&#x5982;Redis&#x7684; <code>SETNX</code>&#xFF09;&#x53BB; <code>set</code> &#x4E00;&#x4E2A; <code>mutex key</code> &#xFF0C;&#x5F53;&#x64CD;&#x4F5C;&#x8FD4;&#x56DE;&#x6210;&#x529F;&#x65F6;&#xFF0C;&#x518D;&#x8FDB;&#x884C; <code>load db</code> &#x7684;&#x64CD;&#x4F5C;&#x5E76;&#x56DE;&#x8BBE;&#x7F13;&#x5B58;&#xFF1B;&#x5426;&#x5219;&#xFF0C;&#x5C31;&#x91CD;&#x8BD5;&#x6574;&#x4E2A; <code>get</code> &#x7F13;&#x5B58;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<h2 id="redis&#x5206;&#x5E03;&#x5F0F;&#x9501;"><a name="redis&#x5206;&#x5E03;&#x5F0F;&#x9501;" class="anchor-navigation-ex-anchor" href="#redis&#x5206;&#x5E03;&#x5F0F;&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>Redis&#x5206;&#x5E03;&#x5F0F;&#x9501;</h2>
+<ul>
+<li>&#x52A0;&#x9501;&#xFF1A;<code>redis.set(String key, String value, String nxxx, String expx, int time)</code></li>
+<li>&#x89E3;&#x9501;&#xFF1A;&#x901A;&#x8FC7; Lua &#x811A;&#x672C;&#x6267;&#x884C; <code>if redis.call(&apos;get&apos;, KEYS[1]) == ARGV[1] then return redis.call(&apos;del&apos;, KEYS[1]) else return 0 end</code></li>
+</ul>
+<h2 id="&#x6570;&#x636E;&#x6DD8;&#x6C70;&#x673A;&#x5236;"><a name="&#x6570;&#x636E;&#x6DD8;&#x6C70;&#x673A;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x6DD8;&#x6C70;&#x673A;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x6DD8;&#x6C70;&#x673A;&#x5236;</h2>
+<h3 id="&#x5BF9;&#x8C61;&#x8FC7;&#x671F;"><a name="&#x5BF9;&#x8C61;&#x8FC7;&#x671F;" class="anchor-navigation-ex-anchor" href="#&#x5BF9;&#x8C61;&#x8FC7;&#x671F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BF9;&#x8C61;&#x8FC7;&#x671F;</h3>
+<p>Redis&#x56DE;&#x6536;&#x8FC7;&#x671F;&#x5BF9;&#x8C61;&#x7684;&#x7B56;&#x7565;&#xFF1A;&#x5B9A;&#x671F;&#x5220;&#x9664;+&#x60F0;&#x6027;&#x5220;&#x9664;</p>
+<ul>
+<li><strong>&#x60F0;&#x6027;&#x5220;&#x9664;</strong>&#xFF1A;&#x5F53;&#x8BFB;/&#x5199;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x8FC7;&#x671F;&#x7684;key&#x65F6;&#xFF0C;&#x4F1A;&#x89E6;&#x53D1;&#x60F0;&#x6027;&#x5220;&#x9664;&#x7B56;&#x7565;&#xFF0C;&#x76F4;&#x63A5;&#x5220;&#x9664;&#x6389;&#x8FD9;&#x4E2A;&#x8FC7;&#x671F;key</li>
+<li><strong>&#x5B9A;&#x671F;&#x5220;&#x9664;</strong>&#xFF1A;&#x7531;&#x4E8E;&#x60F0;&#x6027;&#x5220;&#x9664;&#x7B56;&#x7565;&#x65E0;&#x6CD5;&#x4FDD;&#x8BC1;&#x51B7;&#x6570;&#x636E;&#x88AB;&#x53CA;&#x65F6;&#x5220;&#x6389;&#xFF0C;&#x6240;&#x4EE5;Redis&#x4F1A;&#x5B9A;&#x671F;&#x4E3B;&#x52A8;&#x6DD8;&#x6C70;&#x4E00;&#x6279;&#x5DF2;&#x8FC7;&#x671F;&#x7684;key</li>
+</ul>
+<h3 id="&#x5185;&#x5B58;&#x6DD8;&#x6C70;"><a name="&#x5185;&#x5B58;&#x6DD8;&#x6C70;" class="anchor-navigation-ex-anchor" href="#&#x5185;&#x5B58;&#x6DD8;&#x6C70;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5185;&#x5B58;&#x6DD8;&#x6C70;</h3>
+<p>Redis&#x63D0;&#x4F9B;&#x4E86;&#x4E0B;&#x9762;&#x51E0;&#x79CD;&#x6DD8;&#x6C70;&#x7B56;&#x7565;&#x4F9B;&#x7528;&#x6237;&#x9009;&#x62E9;&#xFF0C;&#x5176;&#x4E2D;&#x9ED8;&#x8BA4;&#x7684;&#x7B56;&#x7565;&#x4E3A;noeviction&#x7B56;&#x7565;&#xFF1A;</p>
+<ul>
+<li><code>noeviction</code>&#xFF1A;&#x5F53;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x8FBE;&#x5230;&#x9608;&#x503C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6240;&#x6709;&#x5F15;&#x8D77;&#x7533;&#x8BF7;&#x5185;&#x5B58;&#x7684;&#x547D;&#x4EE4;&#x4F1A;&#x62A5;&#x9519;&#x3002;</li>
+<li><code>allkeys-lru</code>&#xFF1A;&#x5728;&#x4E3B;&#x952E;&#x7A7A;&#x95F4;&#x4E2D;&#xFF0C;&#x4F18;&#x5148;&#x79FB;&#x9664;&#x6700;&#x8FD1;&#x672A;&#x4F7F;&#x7528;&#x7684;key&#x3002;</li>
+<li><code>volatile-lru</code>&#xFF1A;&#x5728;&#x8BBE;&#x7F6E;&#x4E86;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x7684;&#x952E;&#x7A7A;&#x95F4;&#x4E2D;&#xFF0C;&#x4F18;&#x5148;&#x79FB;&#x9664;&#x6700;&#x8FD1;&#x672A;&#x4F7F;&#x7528;&#x7684;key&#x3002;</li>
+<li><code>allkeys-random</code>&#xFF1A;&#x5728;&#x4E3B;&#x952E;&#x7A7A;&#x95F4;&#x4E2D;&#xFF0C;&#x968F;&#x673A;&#x79FB;&#x9664;&#x67D0;&#x4E2A;key&#x3002;</li>
+<li><code>volatile-random</code>&#xFF1A;&#x5728;&#x8BBE;&#x7F6E;&#x4E86;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x7684;&#x952E;&#x7A7A;&#x95F4;&#x4E2D;&#xFF0C;&#x968F;&#x673A;&#x79FB;&#x9664;&#x67D0;&#x4E2A;key&#x3002;</li>
+<li><code>volatile-ttl</code>&#xFF1A;&#x5728;&#x8BBE;&#x7F6E;&#x4E86;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x7684;&#x952E;&#x7A7A;&#x95F4;&#x4E2D;&#xFF0C;&#x5177;&#x6709;&#x66F4;&#x65E9;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x7684;key&#x4F18;&#x5148;&#x79FB;&#x9664;&#x3002;</li>
+</ul>
+<blockquote>
+<p>&#x8FD9;&#x91CC;&#x8865;&#x5145;&#x4E00;&#x4E0B;&#x4E3B;&#x952E;&#x7A7A;&#x95F4;&#x548C;&#x8BBE;&#x7F6E;&#x4E86;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x7684;&#x952E;&#x7A7A;&#x95F4;&#xFF0C;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x6279;&#x952E;&#x5B58;&#x50A8;&#x5728;Redis&#x4E2D;&#xFF0C;&#x5219;&#x6709;&#x90A3;&#x4E48;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#x8868;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x8FD9;&#x6279;&#x952E;&#x53CA;&#x5176;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x6279;&#x952E;&#x4E2D;&#x6709;&#x4E00;&#x90E8;&#x5206;&#x8BBE;&#x7F6E;&#x4E86;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x6279;&#x952E;&#x8FD8;&#x4F1A;&#x88AB;&#x5B58;&#x50A8;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#x8868;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x54C8;&#x5E0C;&#x8868;&#x4E2D;&#x7684;&#x503C;&#x5BF9;&#x5E94;&#x7684;&#x662F;&#x952E;&#x88AB;&#x8BBE;&#x7F6E;&#x7684;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x3002;&#x8BBE;&#x7F6E;&#x4E86;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x7684;&#x952E;&#x7A7A;&#x95F4;&#x4E3A;&#x4E3B;&#x952E;&#x7A7A;&#x95F4;&#x7684;&#x5B50;&#x96C6;&#x3002;</p>
+</blockquote>
+<h4 id="&#x975E;&#x7CBE;&#x51C6;&#x7684;lru"><a name="&#x975E;&#x7CBE;&#x51C6;&#x7684;lru" class="anchor-navigation-ex-anchor" href="#&#x975E;&#x7CBE;&#x51C6;&#x7684;lru"><i class="fa fa-link" aria-hidden="true"></i></a>&#x975E;&#x7CBE;&#x51C6;&#x7684;LRU</h4>
+<p>&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684;LRU&#xFF08;Least Recently Used&#xFF09;&#x7B56;&#x7565;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A; <strong>Redis &#x5B9E;&#x73B0;&#x7684; LRU &#x5E76;&#x4E0D;&#x662F;&#x53EF;&#x9760;&#x7684; LRU</strong>&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x540D;&#x4E49;&#x4E0A;&#x6211;&#x4EEC;&#x4F7F;&#x7528;LRU&#x7B97;&#x6CD5;&#x6DD8;&#x6C70;&#x952E;&#xFF0C;&#x4F46;&#x662F;&#x5B9E;&#x9645;&#x4E0A;&#x88AB;&#x6DD8;&#x6C70;&#x7684;&#x952E;&#x5E76;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x771F;&#x6B63;&#x7684;&#x6700;&#x4E45;&#x6CA1;&#x7528;&#x7684;&#xFF0C;&#x8FD9;&#x91CC;&#x6D89;&#x53CA;&#x5230;&#x4E00;&#x4E2A;&#x6743;&#x8861;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x5728;&#x5168;&#x90E8;&#x952E;&#x7A7A;&#x95F4;&#x5185;&#x641C;&#x7D22;&#x6700;&#x4F18;&#x89E3;&#xFF0C;&#x5219;&#x5FC5;&#x7136;&#x4F1A;&#x589E;&#x52A0;&#x7CFB;&#x7EDF;&#x7684;&#x5F00;&#x9500;&#xFF0C;Redis&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x5728;&#x6BCF;&#x4E00;&#x4E2A;&#x65F6;&#x523B;&#x53EA;&#x80FD;&#x670D;&#x52A1;&#x4E8E;&#x4E00;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x6240;&#x4EE5;&#x8017;&#x65F6;&#x7684;&#x64CD;&#x4F5C;&#x4E00;&#x5B9A;&#x8981;&#x8C28;&#x614E;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x5728;&#x4E00;&#x5B9A;&#x6210;&#x672C;&#x5185;&#x5B9E;&#x73B0;&#x76F8;&#x5BF9;&#x7684;LRU&#xFF0C;&#x65E9;&#x671F;&#x7684; Redis &#x7248;&#x672C;&#x662F; <strong>&#x57FA;&#x4E8E;&#x91C7;&#x6837;&#x7684; LRU</strong> &#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x653E;&#x5F03;&#x5168;&#x90E8;&#x952E;&#x7A7A;&#x95F4;&#x5185;&#x641C;&#x7D22;&#x89E3;&#x6539;&#x4E3A;&#x91C7;&#x6837;&#x7A7A;&#x95F4;&#x641C;&#x7D22;&#x6700;&#x4F18;&#x89E3;&#x3002;&#x81EA;&#x4ECE; Redis3.0 &#x7248;&#x672C;&#x4E4B;&#x540E;&#xFF0C;Redis &#x4F5C;&#x8005;&#x5BF9;&#x4E8E;&#x57FA;&#x4E8E;&#x91C7;&#x6837;&#x7684; LRU &#x8FDB;&#x884C;&#x4E86;&#x4E00;&#x4E9B;&#x4F18;&#x5316;&#xFF0C;&#x76EE;&#x7684;&#x662F;&#x5728;&#x4E00;&#x5B9A;&#x7684;&#x6210;&#x672C;&#x5185;&#x8BA9;&#x7ED3;&#x679C;&#x66F4;&#x9760;&#x8FD1;&#x771F;&#x5B9E;&#x7684; LRU&#x3002;</p>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB; &#x7F72;&#x540D;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2019-08-11 02:44:16 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="8-innodb.html" class="navigation navigation-prev " aria-label="Previous page: Innodb">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="10-questions.html" class="navigation navigation-next " aria-label="Next page: 面试题">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Redis","level":"1.3.4.7","depth":3,"next":{"title":"面试题","level":"1.3.4.8","depth":3,"path":"basic/4-database/10-questions.md","ref":"basic/4-database/10-questions.md","articles":[]},"previous":{"title":"Innodb","level":"1.3.4.6.1","depth":4,"path":"basic/4-database/8-innodb.md","ref":"basic/4-database/8-innodb.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-sharing","disqus","github-buttons","editlink","ga","prism","-highlight","anchor-navigation-ex","page-footer-ex","splitter","todo","copy-code-button","expandable-chapters-small","mathjax@https://github.com/OrgVue/gitbook-plugin-mathjax.git#speech-fix"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"ignore":["mermaid","eval-js"],"css":["prismjs/themes/prism-solarizedlight.css"]},"disqus":{"useIdentifier":false,"shortName":"gitbook-template"},"editlink":{"label":"Edit","multilingual":false,"base":"https://github.com/hadyang/interview/tree/master"},"todo":{},"page-footer-ex":{"copyright":"使用[知识共享 署名-相同方式共享 4.0协议](https://creativecommons.org/licenses/by-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"此页面修订于："},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"github-buttons":{"buttons":[{"user":"hadyang","repo":"interview","type":"star","size":"small","count":true}]},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"expandable-chapters-small":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-131910384-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"HadYang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java / Android 笔试、面试 知识整理","gitbook":"*"},"file":{"path":"basic/4-database/7-redis.md","mtime":"2019-08-11T02:44:16.464Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-11T02:45:21.458Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
